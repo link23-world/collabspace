@@ -1,0 +1,159 @@
+baseURL: "http://localhost:1313/"
+theme: "up-business-theme"
+languageCode: "en-gb"
+tableOfContents: true
+markup:
+  tableOfContents:
+    startLevel: 3
+    endLevel: 5
+
+title: "link23"
+
+# googleAnalytics: ""
+
+summaryLength: 20
+
+params:
+  title: "link23"
+  description: "Advancing tools for equitable genomics."
+
+  favicons:
+    themeColor: "#FFFFFF"
+    backgroundColor: "#FFFFFF"
+    faviconColor: "#000000"
+
+  social:
+    x: "#"
+    linkedin: "#"
+    slack: "/slack"
+
+  location:
+    - "Genomics England Limited, 1 Canada Square, London E14 5AB"
+
+  contact:
+    - "hello@link23.world"
+
+menus:
+  main:
+    - name: "Home"
+      url: "/"
+      weight: 10
+
+    - name: "About"
+      weight: 20
+
+    - name: "About Us"
+      parent: "About"
+      weight: 10
+
+    - name: "Meet the Team"
+      parent: "About"
+      weight: 20
+
+    - name: "Resources"
+      weight: 30
+
+    - name: "Our Standard"
+      parent: "Resources"
+      weight: 5
+
+    - name: "Toolbox"
+      parent: "Resources"
+      weight: 10
+
+    - name: "Sandbox"
+      url: "https://github.com/link23-world"
+      parent: "Resources"
+      weight: 20
+
+    - name: "Similar Initiatives"
+      parent: "Resources"
+      weight: 30
+
+    - name: "Volunteering"
+      weight: 40
+
+    - name: "Become a Volunteer"
+      parent: "Volunteering"
+      weight: 10
+
+    - name: "Organise a Project"
+      parent: "Volunteering"
+      weight: 10
+
+    - name: "Get Involved"
+      weight: 50
+
+    - name: "Join our community"
+      parent: "Get Involved"
+      weight: 5
+
+    - name: "Citizen Science"
+      parent: "Get Involved"
+      weight: 10
+
+    - name: "Challenges"
+      parent: "Get Involved"
+      weight: 20
+
+    - name: "Events"
+      parent: "Get Involved"
+      weight: 30
+
+    - name: "Updates"
+      weight: 60
+
+    - name: "Newsletter"
+      parent: "Updates"
+      weight: 20
+
+    - name: "Blog"
+      parent: "Updates"
+      weight: 10
+
+    - name: "Partner"
+      weight: 70
+
+    - name: "Contact"
+      weight: 80
+
+  footer:
+    - name: "Home"
+      url: "/"
+      weight: 10
+
+    - name: "About"
+      url: "/about"
+      weight: 20
+
+    - name: "Resources"
+      url: "/resources"
+      weight: 30
+
+    - name: "Volunteering"
+      url: "/volunteering"
+      weight: 40
+
+    - name: "Get Involved"
+      url: "/getinvolved"
+      weight: 50
+
+    - name: "Updates"
+      url: "/updates"
+      weight: 60
+
+    - name: "Partner"
+      url: "/partner"
+      weight: 70
+
+    - name: "Contact"
+      url: "/contact"
+      weight: 80
+
+    - name: "Slack"
+      url: "/slack"
+      weight: 90
+
+taxonomies:
+  series: "series"
+  tags: "tags"

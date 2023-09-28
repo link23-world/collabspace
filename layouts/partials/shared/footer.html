@@ -1,0 +1,41 @@
+<footer class="shared footer bg-blue-light pt-3">
+  <div class="container">
+    <div class="row pb-2">
+      <div class="col-12 col-xl-4 text-center text-xl-start pb-2">
+        <h4 class="fs-4 fw-semibold text-primary">{{ .Site.Title }}</h4>
+        <p class="small text-black-61">{{ .Site.Params.description }}</p>
+        <p class="small text-black-61"><a href="mailto:hello@link23.worldFIXME">hello@link23.world</a></p>
+        {{ with .Site.Params.social }}
+        <ul class="d-flex justify-content-center justify-content-xl-start list-unstyled">
+          <li class="p-2"><a class="d-flex align-items-center justify-content-center" href="{{ .linkedin }}"><img class="size-24" src="/images/icons/linkedin.png"></a></li>
+          <li class="p-2"><a class="d-flex align-items-center justify-content-center" href="{{ .x }}"><img class="size-24" src="/images/icons/x.png"></a></li>
+          <li class="p-2"><a class="d-flex align-items-center justify-content-center" href="{{ .slack }}"><img class="size-24" src="/images/icons/slack.png"></a></li>
+        </ul>
+        {{ end }}
+      </div>
+      <div class="col-12 col-xl-2 text-center text-xl-start">
+        <h5 class="fs-6 fw-semibold text-primary">Useful links</h5>
+        <ul class="list-unstyled list-footer">
+          {{ range .Site.Menus.footer }}
+            <li class="">
+              <a class="small text-black-61 text-decoration-none" href="{{ .URL }}">{{ .Name }}</a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="col-12 col-xl-3 text-center text-xl-start">
+        <h5 class="fs-6 fw-semibold text-primary">A Genomics England Limited Initiative</h5>
+        <p class="small text-black-61">1 Canada Square, London E14 5AB, United Kingdom. </p>
+        <p class="small text-black-61">link23 does not necessarily reflect the views of Genomics England. </p>
+      </div>
+      <div class="col-12 col-xl-3 text-center text-xl-start">
+        <img src="/images/logo-gel.png" alt="Genomics England Logo" width="250px" height="144px" style="float: right;">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+          <p class="small text-black-61 text-center">© 2023 link23. All content on link23 is licenced under a <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 licence</a>. | <a href="https://www.genomicsengland.co.uk/privacy-policy">Privacy Policy</a> | <a href="FIXME">Terms of Use</a> </p>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,1 @@
+Aman Ali is a community organiser who has played various national and local roles in Muslim communities for more than a decade. He’s been the Head of community engagement at MEND, trustee of the East London Mosque and Head of Media at the Federation of Student Islamic societies to name a few.

@@ -1,0 +1,9 @@
+enabled: true
+id: "cta"
+
+content:
+  title: "Join the link23 community now!"
+  image: "images/dnaworld-1.png"
+  button:
+    label: "Join our Slack"
+    url: "/slack"

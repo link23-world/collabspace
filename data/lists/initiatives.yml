@@ -1,0 +1,62 @@
+enabled: true
+id: "toolbox"
+
+public:
+  - name: Africa Health Research Institute
+    url: https://www.ahri.org/
+  - name: All of Us
+    url: https://allofus.nih.gov/
+  - name: Australia Genome Project — Indigenous Genomics
+    url: https://www.australiangenomics.org.au/project-areas/indigenous-genomic-priorities/
+  - name: Biobank Japan
+    url: https://biobankjp.org/english/pdf/english.pdf
+  - name: Brazilian Initiative on Precision Medicine
+    url: https://bipmed.org/
+  - name: Diverse Data Initiative at Genomics England
+    url: https://www.genomicsengland.co.uk/initiatives/diverse-data
+  - name: Genes & Health
+    url: https://www.genesandhealth.org/
+  - name: GenomeAsia 100k
+    url: https://www.genomeasia100k.org/
+  - name: Greater Middle-East Variome Project
+    url: http://igm.ucsd.edu/gme/
+  - name: H3Africa
+    url: https://h3africa.org/
+  - name: Human Pangenome Reference Consortium
+    url: https://humanpangenome.org/
+  - name: International HundredK+ Cohorts Consortium (IHCC)
+    url: https://ihccglobal.org/
+  - name: Malaria Genomic Epidemiology Network (MalariaGEN)
+    url: https://www.malariagen.net/
+  - name: MX Biobank Project
+    url: http://www.morenolab.org/projects/
+  - name: Our Future Health
+    url: https://ourfuturehealth.org.uk/
+  - name: Qatar Genome
+    url: https://www.qatargenome.org.qa/
+  - name: Trans-Omics for Precision Medicine (TOPMed)
+    url: https://topmed.nhlbi.nih.gov/
+
+companies:
+  - name: 23andMe Global Genetics Project
+    url: https://www.23andme.com/global-genetics/
+  - name: Benevolent AI’s Data Diversity Initiative
+    url: https://www.benevolent.com/news-and-media/blog-and-videos/data-diversity-initiative-tackling-medical-research-data-gap/
+  - name: Jana Bio
+    url: https://www.janabio.co/
+  - name: "Project Africa GRADIENT: GSK & Novartis"
+    url: https://www.gsk.com/en-gb/media/press-releases/gsk-and-novartis-announce-collaboration-to-support-scientific-research-into-genetic-diversity-in-africa/
+
+communities:
+  - name: Ancestry & Diversity Forum
+    url: https://clinicalgenome.org/tools/ancestry-and-diversity-forum/
+  - name: Data for Black Lives
+    url: https://linkin.bio/data4blacklives
+  - name: Data Science for Health Equity
+    url: https://www.datascienceforhealthequity.com/
+  - name: Genetics Engage
+    url: https://www.geneticsengage.org/
+  - name: Latin Genomes
+    url: https://twitter.com/LatinGenomes
+  - name: Polygenic Risk Methods in Diverse Populations (PRIMED) Consortium
+    url: https://primedconsortium.org/

@@ -1,0 +1,38 @@
+{{ define "main" }}
+  <section class="section blog-single py-4">
+    <h3 class="fs-1 fw-bold text-center text-primary pb-3">About</h3>
+    <div class="container">
+      <div class="row g-2 pt-3">
+        <div class="col-md-4">
+          <div class="card h-100 p-4 pb-0 shadow-lg bg-white rounded">
+            <div class="card-body text-left">
+              <h4 class="card-text text-danger text-center pb-4">Who are we?</h4>
+              <p>{{ partial "sections/whoarewe.html" }}</p>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-8">
+            <div class="row pb-2">
+                <div class="col-md-12 mx-auto">
+                    <div class="card h-100 shadow-lg p-2">
+                      <div class="card-body text-left">
+                        <h4 class="card-text text-danger text-center pb-4">Our Values</h4>
+                        <p>{{ partial "sections/values.html" }}</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 mx-auto">
+                  <div class="card h-100 shadow-lg p-2">
+                    <div class="card-body text-left">
+                      <h4 class="card-text text-danger text-center pb-4">Licensing and Citing</h4>
+                      <p>{{ partial "sections/citeus.html" }}</p>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+    </div>
+  </section>
+{{ end }}

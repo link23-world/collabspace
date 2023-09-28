@@ -1,0 +1,1 @@
+Lyra Nightingale is Ethics Lead for the Diverse Data Programme at Genomics England. Before joining Genomics England, she was working as a lawyer representing vulnerable people in cases concerning their health and welfare.

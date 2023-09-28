@@ -1,0 +1,1 @@
+Dr Hilary Martin is a group leader at the Wellcome Sanger Institute with a PhD in Human Genetics from Oxford University. Hilary’s research focuses on exploring genetic architecture in the Deciphering Developmental Disorders (DDD) study, with a particular focus on the role of rare recessive variants and polygenic risk.

@@ -1,0 +1,16 @@
+enabled: true
+id: "hero"
+
+content:
+  title: "**link23**"
+  subtitle: "Advancing tools for equitable genomics"
+  image: images/dnatool.gif
+  text: "**link23** is an Open initiative on a mission to improve equity and diversity in the providers, users and beneficiaries of genomic tools and data worldwide."
+
+buttons:
+  - label: "About Us"
+    url: "/about"
+  - label: "Contact us"
+    url: "/contact"
+  - label: "Join our Slack today!"
+    url: "/slack"

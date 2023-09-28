@@ -1,0 +1,235 @@
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown:hover .dropdown-content  a:hover {
+  background-color: #FDD80D;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown .dropdown-content,
+.dropdown nav-link,
+.dropdown text-primary,
+.dropdown px-4 {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 100;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  background-color: white;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: white;
+}
+
+.list-footer {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+img {
+  border-radius: 15%;
+}
+
+.brands img, .window img {
+  border-radius: 0;
+}
+
+strong {
+  color: #FC4E1A;
+}
+
+.card-partners {
+  cursor: pointer;
+}
+
+.container-cards {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+}
+
+.partner-content {
+  z-index: 100;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  border: black 1px solid;
+  box-shadow: 10px 10px rgba(199, 197, 197, 0.768);
+  opacity: 0.97;
+  display: none;
+}
+
+.close-partner {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+#dnatool-img{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top:  0;
+  text-align: center;
+  opacity: 0;
+  display: block;
+}
+
+.gifimg {
+  transition: opacity 1s ease;
+  display: block;
+}
+
+.table-std, .table-std th, .table-std td {
+  border: 1px solid black;
+}
+
+@media (min-width: 1200px) {
+  .alt-reverse-4:nth-child(4n) {
+    flex-direction: row-reverse;
+  }
+  .alt-reverse-3:nth-child(3n) {
+    flex-direction: row-reverse;
+  }
+  .alt-reverse-2:nth-child(2n) {
+    flex-direction: row-reverse;
+  }
+}
+
+.copy-box {
+  border: 1px solid lightgray;
+  cursor: pointer;
+  position: relative;
+}
+
+.copy-box::after {
+  content: '\01F4CB';
+  right: 0;
+  top: 0;
+  position: absolute;
+}
+
+.copy-box:hover {
+  background-color: lightgray;
+}
+
+.tooltip2 {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip2 .tooltiptext {
+  visibility: hidden;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 120%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip2 .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip2:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.table-striped-cols tr:nth-of-type(odd) td:nth-of-type(odd),
+.table-striped-cols tr:nth-of-type(even) td:nth-of-type(even) {
+    background:var(--bs-table-striped-bg);
+}
+
+blockquote {
+  border-left: 4px solid var(--bs-light);
+  background-color: rgb(247, 247, 247);
+  font-family: serif;
+  font-size: 18px;
+  font-style: italic;
+  padding: 1em 0px 0em 40px;
+  position: relative;
+}
+
+blockquote:before {
+  display: block;
+  padding-left: 10px;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -15px;
+  top: -15px;
+  color: var(--bs-light);
+}
+
+figcaption {
+  font-size: 14px;
+  color: gray;
+}
+
+#home {
+  width: 100%;
+}
+
+.team-img {
+  width: 216px;
+  height: 231px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+p {
+  font-size: 17px;
+}
+
+h1, h2, h3 {
+  color: var(--bs-primary);
+}
+
+.organise li {
+  list-style-type: "✔️";
+  padding-left: 5px;
+}
+
+.navbar {
+  border-bottom: 1px black solid;
+  box-shadow: 0 13px 10px -12px var(--bs-gray-700);
+}

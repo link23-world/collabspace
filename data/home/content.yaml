@@ -1,0 +1,79 @@
+enabled: true
+id: "content"
+
+content:
+  - image: "images/dnatool-1.png"
+    title: "About link23"
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
+
+    buttons:
+      - label: "About us"
+        url: "/aboutus"
+
+      - label: "Meet the team"
+        url: "/team"
+
+  - image: "images/dnacartoon-2.png"
+    title: "Resources for genomic equity"
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
+
+    buttons:
+      - label: "Toolbox"
+        url: "/toolbox"
+
+      # - label: "Sandbox"
+      #   url: "/sandbox"
+
+      - label: "Similar Initiatives"
+        url: "/initiatives"
+
+  - image: "images/dnatool-3.png"
+    title: "Volunteer with link23"
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
+
+    buttons:
+      - label: "Become a Volunteer"
+        url: "/volunteer"
+
+      - label: "Organise an Event"
+        url: "/organise"
+
+      - label: "Join our slack"
+        url: "/slack"
+
+  - image: "images/dnatown-1.png"
+    title: "Get Involved in link23 events"
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
+
+    buttons:
+      - label: "Become a Citizen Scientist"
+        url: "/citizen"
+
+      - label: "Take part in a challenge"
+        url: "/challenges"
+
+      - label: "Join a workshop"
+        url: "/events"
+
+  - image: "images/dnacartoon-1.png"
+    title: "Stay up to date"
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
+
+    buttons:
+      - label: "Read our blog"
+        url: "/blog"
+
+      - label: "Sign-up to the newsletter"
+        url: "/newsletter"
+
+  - image: "images/dnatool-2.png"
+    title: "Partner with link23"
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
+
+  - image: "images/dnacartoon-3.png"
+    title: "Get in touch"
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
+
+    buttons:
+      - label: "Contact"
+        url: "/contact"

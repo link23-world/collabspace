@@ -1,0 +1,38 @@
+<section class="section toolbox pb-5">
+  <div class="container">
+    <table id="toolbox-table" class="table-striped">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Group</th>
+          <th>Tags</th>
+        </tr>
+      </thead>
+      <tbody>
+      {{ range .tools }}
+        <tr>
+          <td><a href="{{ .url }}">{{ .name }}</a></td>
+          <td>{{ .description }}</td>
+          <td>{{ .group }}</td>
+          <td>{{ .tags }}</td>
+        </tr>
+      {{ end }}
+      </tbody>
+    </table>
+    </div>
+</section>
+
+<script>
+  $(document).ready( function () {
+    $('#toolbox-table').DataTable({
+      colReorder: true,
+      autoFill: true,
+      buttons: true,
+      fixedHeader: true,
+      keyTable: true,
+      responsive: true,
+      rowReorder: true,
+    });
+} );
+</script>

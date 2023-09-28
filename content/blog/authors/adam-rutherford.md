@@ -1,0 +1,1 @@
+Adam Rutherford is a geneticist, author and broadcaster who has produced several documentaries and books on genetics. He is the co-host of BBC Radio 4’s Inside Science and is a Honorary Senior Research Associate in the Division of Biosciences at University College London.

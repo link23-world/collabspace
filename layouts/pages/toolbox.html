@@ -1,0 +1,26 @@
+{{ define "main" }}
+  <section class="section standard p-5" id = "section-standards">
+    <div class="container px-5">
+      <div class="row justify-content-center pb-5">
+        <div class="col-12 col-xl-auto">
+          <h1 class="fs-1 fw-bold text-center text-primary pb-3">Toolbox</h1>
+          <h2>What is a tool?</h2>
+          <p>If it looks like a tool, and solves a problem, then it is a tool.<br><br>
+          This could include software, a how-to guide for solving a particular task, a handbook for equity, a reference for deciding how to appropriately use equitable terminology, and more.</p>
+          <p>For link23, tools must fulfil the following criteria:
+            <ol>
+              <li>
+                The tool must contribute to solving genuine problem. The tool could be a small piece in a large pipeline or an end-to-end solution but it must be built to solve real-world problems. For example, a tool that provides colour palettes that look like artwork would be out-of-scope whereas a tool that provides colour-blind-friendly palettes may be in scope.
+              </li>
+              <li>
+                The problems they solve must have a demonstrable link to genomic equity. This means the tool could either be a tool for genomic analysis that takes equity into consideration in some way (e.g., analysis tools developed for people from non-European ancestry) or a tool for equity that can be applied to genomics (e.g., a handbook for developing domain-agnostic software that is equitable for users). The link to genomic equity may not be fully developed if there is a clear path for development (e.g., a tool for equitable analysis of health records data that could be adapted for equitable analysis of genomic data).
+              </li>
+            </ol>
+          </p>
+          <p>So without anymore preamble... the link23 toolbox!</p>
+      </div>
+      </div>
+    {{ with .Site.Data.lists.toolbox }}{{ partial "lists/toolbox.html" . }}{{ end }}
+    </div>
+  </section>
+{{ end }}

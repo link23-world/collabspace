@@ -1,0 +1,22 @@
+{{ define "main" }}
+  <section class="section standard p-5" id = "section-standards">
+    <div class="container px-5">
+      <div class="row justify-content-center pb-5">
+        <div class="col-12 col-xl-auto">
+            <h3 class="fs-1 fw-bold text-center text-primary pb-3">Standard</h3>
+            <p>All tools in our <a href="/toolbox">toolbox</a> are assessed according to our equity standard. Tools are graded on a number of criteria against a Green, Amber, Red scale, which will be assessed by members of the link23 community (so <a href="/getinvolved"> get involved today!</a>). Tools with any Red criteria will not be immediately featured on our toolbox however we actively want to work with developers to enable all tools to become Green.
+            </p>
+            <p>
+              Our standard is meant to evolve and develop over time and we will have a GitHub repository that anyone can comment on and make pull requests to so that we can have ongoing discussions with the community to update this standard.
+              In a future version of this website we will enable live voting and comments on tools in order to rank tools by utility and to allow users to post comments about how they have used the tool in their practice, we will also enable code chunks so tool users can include code snippets demonstrating the tool in practice.
+            </p>
+            <p>
+              Finally, there are many other standards out there that focus on different aspects of tool development. We will added badges or links to all other standards that any tools <a href="/toolbox">our toolbox</a> may conform to, for example if the tool is a recognised by a <a href="https://digitalpublicgoods.net/registry/">Digital Public Good</a> or if it adheres to <a href="https://www.go-fair.org/fair-principles/">FAIR</a>/<a href="https://www.nature.com/articles/s41597-022-01710-x">FAIR4RS</a> principles.
+            </p>
+            <p>So without anymore preamble... the link23 standard!</p>
+        </div>
+      </div>
+    {{ with .Site.Data.pages.standard }}{{ partial "sections/standard.html" . }}{{ end }}
+    </div>
+  </section>
+{{ end }}

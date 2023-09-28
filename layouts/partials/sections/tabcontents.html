@@ -1,0 +1,44 @@
+<section class="section services py-4">
+  <div class="container">
+    <div class="row justify-content-center pb-2">
+      <div class="col-12 col-xl-auto">
+        {{ with .content.title }}
+          <h3 class="fs-1 fw-bold text-center text-primary pb-0">{{ . }}</h3>
+        {{ end }}
+        {{ with .content.text }}
+          <p class="text-left pb-3">{{ . | markdownify }}</p>
+        {{ end }}
+      </div>
+    </div>
+    {{ $ncards := len .content.cards }}
+      {{ if (gt $ncards 2) }}
+        <div class="row g-4">
+      {{ else }}
+        <div class="row g-1">
+      {{ end }}
+      {{ range .content.cards }}
+          {{ if(eq $ncards 4) }}
+            <div class="col-6 col-xl-3 col-lg-3 col-md-3 col-sm-5 mx-auto">
+          {{ else if (eq $ncards 3) }}
+            <div class="col-6 col-xl-4 col-lg-4 col-md-4 col-sm-5 mx-auto">
+          {{ else }}
+            <div class="col-6 col-xl-4 col-lg-4 col-md-4 col-sm-5 mx-auto">
+          {{ end }}
+          <div class="card h-100 p-4 pb-0 shadow bg-white rounded">
+            <h4 class="card-title text-center text-danger pb-2">{{ .title }}</h4>
+            <img src="/images/{{ .image }}.png">
+            <div class="card-body text-center">
+              <p class="card-text pb-4">{{ .text | markdownify }}</p>
+              {{ if (isset . "external") }}
+                <a class="btn btn-outline-primary px-4" href='{{ .external }}'>{{ .button }}&nbsp;&nbsp;<i class="fa fa-external-link"></i></a>
+              {{ else }}
+                {{ $url := .button | lower }}
+                <a class="btn btn-outline-primary" href='/{{ replace $url " " "" }}'>{{ .button }}</a>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

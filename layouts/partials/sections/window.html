@@ -1,0 +1,91 @@
+<section class="section window pb-5 pt-3">
+  <div class="container-fluid" id="home">
+    <div class="row g-3 pt-3">
+      <div class="col-md-4">
+        <div class="card h-100 p-4 pb-0 shadow bg-white rounded">
+          <div class="card-body text-left">
+            <h4 class="card-text text-primary">
+              <strong>link23</strong> is an Open initiative on a mission to improve equity and diversity in the providers, users and beneficiaries of genomic tools and data worldwide. We work across four overlapping pillars focused on:<br><Br>
+              <ol>
+                <li class="pb-4">Curating existing tools</li>
+                <li class="pb-4">Developing new tools</li>
+                <li class="pb-4">Running collaborative and competitive challenges</li>
+                <li class="pb-4">Building an exciting and engaged community all around tools for genomic equity.</li>
+              </ol>
+            </h4>
+            <div class="text-center m-0 p-0">
+            {{ range .content.buttons }}
+              <a class="btn btn-outline-primary px-2 ms-sm-2 text-center" href="{{ .url }}">{{ .label }}</a>
+            {{ end }}
+            </div>
+            <div class="position-relative mx-auto p-0 text-center justify-content-center">
+              <div class="row m-auto" style="max-width: 430px;">
+                  <img id="dnatool-gif" class="gifimg" src="images/dnatool.gif" alt="Cartoon gif of double helix and cogs" style="max-width: 430px;">
+                  <img id="dnatool-img" class="gifimg" src="images/dnatool.png" alt="Cartoon image of double helix and cogs" style="max-width: 430px;">
+            </div>
+          </div>
+          </div>
+      </div>
+      </div>
+      <div class="col-md-8">
+          <div class="row">
+            {{ range .content.row1}}
+              <div class="col-md-6 mx-auto">
+                  <div class="card h-100 shadow p-3 mb-3 bg-white rounded">
+                    <div class="card-body text-center">
+                      <h4 class="card-title text-center text-danger pb-2">{{ .title }}</h4>
+                      <img class="img-fluid" style="height: 270px;" src="/images/window/{{ .image }}.png">
+                      {{ range .button }}
+                        <a class="btn btn-outline-primary px-4 mt-5" href='{{ .url }}'>{{ .label }}</a>
+                      {{ end }}
+                    </div>
+                  </div>
+                </div>
+              {{ end }}
+          </div>
+          <div class="row">
+            {{ range .content.row2}}
+              <div class="col-md-6 mx-auto pt-4">
+                  <div class="card h-100 shadow p-3 mb-3 bg-white rounded">
+                    <div class="card-body text-center">
+                      <h4 class="card-title text-center text-danger pb-2">{{ .title }}</h4>
+                      <img class="img-fluid" style="height: 270px;" src="/images/window/{{ .image }}.png">
+                      {{ range .button }}
+                        <a class="btn btn-outline-primary px-4 mt-5" href='{{ .url }}'>{{ .label }}</a>
+                      {{ end }}
+                    </div>
+                  </div>
+                </div>
+              {{ end }}
+          </div>
+      </div>
+  </div>
+</section>
+
+<script>
+  const dnagif = document.getElementById('dnatool-gif');
+  const dnaimg = document.getElementById('dnatool-img');
+
+  document.getElementsByClassName("navbar")[0].addEventListener("mouseover", GIFtoimg);
+  document.getElementsByClassName("navbar")[0].addEventListener("mouseout", imgtoGIF);
+
+  window.onscroll = function() { toggleGIF() };
+
+  function imgtoGIF() {
+    dnagif.style.opacity = '1';
+    dnaimg.style.opacity = '0';
+  }
+
+  function GIFtoimg() {
+    dnagif.style.opacity = '0';
+    dnaimg.style.opacity = '1';
+  }
+
+  function toggleGIF() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      GIFtoimg()
+    } else {
+      imgtoGIF()
+    }
+  }
+</script>

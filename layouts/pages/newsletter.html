@@ -1,0 +1,17 @@
+{{ define "main" }}
+<section class="section standard p-5" id = "section-standards">
+    <div class="container" style="width: 60%;">
+      {{ $date := (path.Base .RelPermalink | time) }}
+      <div>{{$date.Format "2 January 2006"}}</div>
+      <div class="fs-1 fw-bold text-primary">{{.Params.title}}</div>
+      <div class="img-fluid justify-content-center text-center pb-4">
+        <img style="width: 300px" src='/images/newsletter/posts/{{$date.Format "2006-01-02"}}.jpg'>
+      </div>
+      <div>
+        <article class="blog-content pb-5">
+          {{ .Content }}
+        </article>
+      </div>
+    </div>
+  </section>
+{{ end }}

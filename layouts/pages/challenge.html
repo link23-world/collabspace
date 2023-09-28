@@ -1,0 +1,39 @@
+{{ define "main" }}
+<section class="section standard p-5" id = "section-standards">
+    <div class="container" style="width: 60%;">
+      <div>
+        {{ $date_live := (.Params.date_live | time).Format "2 January 2006" }}
+        {{ $date_close := (.Params.date_close | time).Format "2 January 2006" }}
+        {{ print $date_live " – " $date_close}}
+      </div>
+
+      <div class="fs-1 fw-bold text-primary">{{.Params.title}}</div>
+      <div class="fs-2 fw-bold text-light pb-3">with {{ delimit .Params.partners ", "}}</div>
+      <div class="img-fluid justify-content-center text-center pb-4">
+        <img style="width: 300px" src='/images/challenge/posts/{{path.BaseName .}}.png'>
+      </div>
+      <div>
+        <article class="blog-content pb-5">
+          {{ .Content }}
+        </article>
+      </div>
+      <hr>
+      <div class="container pt-3">
+        {{ range $partner := .Params.author}}
+        {{ $container := (replace ( $container | lower) " " "-")}}
+        {{ with site.GetPage (print "challenge/partners/" $container ".md") }}
+          <div class="row alt-reverse-2 pb-3">
+            <div class="col-4">
+              <img style="width: 250px" src="/images/challenge/partners/{{$partner}}.jpg">
+            </div>
+            <div class="col-8 pt-5">
+              {{ .Content }}
+            </div>
+          </div>
+        </div>
+        {{ end }}
+        {{ end }}
+      <hr>
+    </div>
+  </section>
+{{ end }}

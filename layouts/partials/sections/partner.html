@@ -1,0 +1,77 @@
+<section class="section services py-5" onclick="hidePartnerType()", id = "section-partners">
+  <div class="container">
+    <div class="row justify-content-center pb-2">
+      <div class="col-12 col-xl-auto">
+        {{ with .content.title }}
+          <h3 class="fs-1 fw-bold text-center text-primary pb-0">{{ . }}</h3>
+        {{ end }}
+        {{ with .content.text }}
+          <p class="text-left pb-3">{{ . }}</p>
+        {{ end }}
+      </div>
+    </div>
+    <div class="container-cards col-12">
+    <div class="row g-2 justify-content-md-center pb-4">
+      {{ range $idx, $card := .content.cards }}
+          <div class="col-lg-2">
+          <div onclick="showPartnerType({{ $card.title }})" class="card card-partners h-100 shadow p-3 mb-3 bg-white rounded">
+            <h4 class="card-title text-center text-danger pb-2 fs-5">{{ $card.title }}</h4>
+            <img class = "img-fluid" src="/{{ $card.image }}">
+            <div class="text-center m-0 p-0 mt-2">
+              <p class="m-0 p-0">{{ $card.who | markdownify }}</p>
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+
+    <!-- card content -->
+    {{ range .content.cards }}
+    {{ $id := print "partner-" .title }}
+    <div class="partner-content p-5" id="{{ $id }}">
+      <h1 class="pb-3 text-danger" style="text-align: center;">{{ .title}} Partner</h1>
+      <span onclick="hidePartnerType({{ .title }})" class="close-partner">&#10005;</span>
+      <h2 class="pb-3">Who are you?</h2>
+      <p>{{ .who | markdownify }}</p>
+      <h2 class="pb-3">What you can do for us</h2>
+      <ul>
+        {{ range .forus}}
+          <li>{{ . | markdownify }}</li>
+        {{ end }}
+      </ul>
+      <h2 class="pb-3">What we can do for you</h2>
+      <ul>
+        {{ range .foryou}}
+          <li>{{ . | markdownify }}</li>
+        {{ end }}
+      </ul>
+      <h3 class="pb-3"> Ready to partner with link23? </h3>
+      <div class="d-flex flex-column flex-xl-row ">
+          <a class="btn btn-outline-primary px-4 my-1 ms-xl-4" href="/contact">Contact us to discuss more<span class="ms-2">{{ partial "icons/arrow-right.html" }}</span></a>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+</section>
+
+<script>
+  function showPartnerType(type) {
+    const id = "partner-".concat(type);
+    document.getElementById(id).style.display = "block";
+  }
+
+  function hidePartnerType(type = null) {
+    if (event.target.closest(".card-partners") === null) {
+      if (type === null) {
+        const classes = document.getElementsByClassName("partner-content");
+        for (let i = 0; i < classes.length; i++) {
+          classes[i].style.display = 'none';
+        }
+      } else {
+        const id = "partner-".concat(type);
+        document.getElementById(id).style.display = 'none';
+      }
+    }
+  }
+</script>

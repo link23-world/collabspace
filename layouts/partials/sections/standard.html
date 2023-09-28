@@ -1,0 +1,42 @@
+<div class="container">
+    {{ range .content.category}}
+        <hr>
+        <div class="row alt-reverse-4">
+          <div class="col-12 col-xl-6 d-flex flex-column justify-content-center">
+            <h2 class="text-primary pb-4">{{ .title }}</h2>
+            <h3 class="text-danger">What</h3><p>{{ .what | markdownify}}</p>
+            <h3 class="text-danger">Why</h3><p>{{ .why | markdownify}}</p>
+          </div>
+          <div class="col-12 col-xl-6 d-flex flex-column justify-content-center align-items-center">
+              <img class="img-fluid" style="width: 50%;" src="/images/{{ .image }}">
+          </div>
+        <h3 class="text-danger pb-3">How</h3>
+        <table class="table table-hover table-sm table-responsive" style="border: 2px solid black;">
+          <thead class="thead-dark">
+            <tr>
+              <th>Rating</th>
+              <th>Software</th>
+              <th>Tool</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-success">
+              <td>Green</td>
+              <td>{{ .gs | markdownify}}</td>
+              <td>{{ .gt | markdownify }}</td>
+            </tr>
+            <tr class="table-warning">
+              <td>Amber</td>
+              <td>{{ .as | markdownify }}</td>
+              <td>{{ .at | markdownify }}</td>
+            </tr>
+            <tr class="table-danger">
+              <td>Red</td>
+              <td>{{ .rs | markdownify }}</td>
+              <td>{{ .rt | markdownify }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    {{ end }}
+  </div>

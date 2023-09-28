@@ -1,0 +1,29 @@
+{{ define "main" }}
+<section class="section organise p-5">
+    <div class="container" style="width: 60%;">
+      <div class="fs-1 fw-bold text-primary">{{.Params.title}}</div>
+      <div class="img-fluid justify-content-center text-center pb-4">
+        <img style="width: 300px" src='/images/organise/posts/{{ .Params.image }}'>
+      </div>
+      <div class="pb-3">
+        <h3>Key Details</h3>
+        <ul class="fs-5">
+          <li>Application close date: {{ (.Params.apply_date | time).Format "2 January 2006" }}</li>
+          <li>Contract length: {{ .Params.weeks }} weeks</li>
+          <li>Expected FTE: {{ .Params.fte }}</li>
+          <li>Payment: {{ .Params.pay }}</li>
+        </ul>
+      </div>
+      <div class="pb-3">
+        <h3>Description</h3>
+        <article class="blog-content">
+          {{ .Content }}
+        </article>
+      </div>
+      <div>
+        <h3>Apply Now!</h3>
+        <p>Interested in applying? Send an email to <a href="mailto:organise@link23.world">organise@link23.world</a> with "{{ (.Params.apply_date | time).Format "CTR20060102" }}" in the subject line and attach your CV and a very short (less than half a page!!) cover note letting us know why you're interested. If you're unsure if this opportunity is for you and want to find out more then message <a href="/team">one of us</a> on Slack!.</p>
+      </div>
+    </div>
+  </section>
+{{ end }}

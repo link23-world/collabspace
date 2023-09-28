@@ -1,0 +1,16 @@
+enabled: true
+id: "about"
+
+content:
+  title: "About link23"
+  text: "Learn about the purpose of link23, why we exist, and how you can help out. Also come meet the team and contributors behind link23, you could be one of them!"
+  cards:
+    - image: "dnacartoon-1"
+      title: "Learn about link23"
+      text: "link23 is driven by a vision to improve equity in the developers, users, and beneficiaries of genomic tools. Learn more about our mission, vision, values, how to cite us, and what our name means."
+      button: "About Us"
+
+    - image: "dnatown-1"
+      title: "Come meet the team"
+      text: "link23 is a Genomics England initiative, run by members of the Genomics England Diverse Data data team. If you have any questions about link23, we're the ones to talk to!"
+      button: "Meet the Team"

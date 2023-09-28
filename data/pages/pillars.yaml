@@ -1,0 +1,32 @@
+enabled: true
+id: "pillars"
+
+content:
+  cards:
+    - image: "images/dnadrawing-2.png"
+      title: "Tooling and Standards"
+      text: "We will review tools related to genomic equity and assess them against [our standard](/standard). Curated tools are added [to our toolbox](/toolbox)."
+      button:
+        label: "Search our toolbox"
+        url: "/toolbox"
+
+    - image: "images/dnasurf-2.png"
+      title: "Sandbox and development"
+      text: "As well as curating tools, we will identify gaps for new tools to develop, which could mean creating a novel tool from scratch, or working on an existing tool. We have setup a [GitHub organisation](https://github.com/link23worldFIXME) that can be used by anyone as a sandbox, which means we are very open to prototypes and blue skies thinking to allow us to play with new ideas in a sage environment."
+      button:
+        label: "Follow our GitHub"
+        url: "https://github.com/link23worldFIXME"
+
+    - image: "images/dnaworld-3.png"
+      title: "Challenges and diverse data"
+      text: "We will work with [partners](/partners) to identify challenges they are facing and will work with them to create the best mechanism for our community to solve their challenge, which could be anything from a public hackathon to funding 2-3 experts in the area, [check-out our open challenges](/challenges)!"
+      button:
+        label: "Open challenges"
+        url: "/challenges"
+
+    - image: "images/dnacommunity-1.png"
+      title: "Community and citizen science"
+      text: "We want to build a community of diverse stakeholders interested in genomic equity. Whether you're a clinician, researcher, software developer, or just someone interested in genetics, we want this to be the place for you! There are many ways to [get involved](/getinvolved) in link23 events and if you have some free time then we are always interested in new [volunteers](/volunteer) and we are also interested in forming [partnerships with organisations](/partner)."
+      button:
+        label: "Join our Slack"
+        url: "/slack"

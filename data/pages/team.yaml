@@ -1,0 +1,13 @@
+enabled: true
+id: "pillars"
+
+content:
+    - name: "Marie Nugent"
+      title: "Community Lead"
+      image: "marie.webp"
+    - name: "Maxine Mackintosh"
+      title: "Diverse Data Programme Lead"
+      image: "maxine.webp"
+    - name: "Raphael Sonabend"
+      title: "link23 Lead"
+      image: "raphael.jpg"

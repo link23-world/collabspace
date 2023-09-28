@@ -1,0 +1,18 @@
+<section class="section services pb-5">
+  <div class="container">
+      {{ range .content.cards }}
+        <div class="row">
+          <div class="col g-5 col-xl-3">
+            {{ partial "utilities/image-fluid.html" .image }}
+          </div>
+          <div class="col g-5 col-xl-9">
+            <div class="text-left">
+              <h4 class="text-left text-primary pb-4">{{ .title }}</h4>
+              <p class="text-black-61 pb-4">{{ .text | markdownify }}</p>
+              {{ with .button }}<a class="btn btn-outline-primary px-4" href="{{ .url }}">{{ .label }}</a>{{ end }}
+            </div>
+            </div>
+        </div>
+      {{ end }}
+  </div>
+</section>

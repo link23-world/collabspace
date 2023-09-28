@@ -1,0 +1,25 @@
+enabled: true
+id: "brands"
+
+content:
+  title: "To achieve our mission, we're working with amazing partners..."
+  items:
+    - "images/logo-turing.webp"
+    - "images/logo-benevolent.webp"
+    - "images/logo-allofus.webp"
+    - "images/logo-gwas.webp"
+    - "images/logo-genomecanada.webp"
+    - "images/logo-outfuturehealth.webp"
+    - "images/logo-healthfoundation.webp"
+    - "images/logo-elife.webp"
+    - "images/logo-standing.webp"
+    - "images/logo-nhs.webp"
+    - "images/logo-turingway.webp"
+    - "images/logo-dsxhe.webp"
+    - "images/logo-ga4gh.webp"
+    - "images/logo-nihr.webp"
+    - "images/logo-rho.webp"
+    - "images/logo-opentargets.webp"
+    - "images/logo-ols.webp"
+    - "images/logo-abpi.webp"
+    - "images/logo-gsi.webp"

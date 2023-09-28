@@ -1,0 +1,1 @@
+Dr Garrett Hellenthal is a Sir Henry Dale Fellow working on constructing and applying statistical methods to infer human history using genetic data at UCL Genetics Institute (UGI).

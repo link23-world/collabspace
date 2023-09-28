@@ -1,0 +1,26 @@
+enabled: true
+id: "getinvolved"
+
+content:
+  title: "Get involved"
+  text: "Whilst we would love you to become a volunteer and join regular link23 events, there are also ways you can get involved immediately in one-off events and opportunities."
+  cards:
+    - image: "involve-community"
+      title: "Join the link23 Slack"
+      text: "Become a member of our community by joining our Slack to chat with other community members, take part in public polls, and be the first to hear about upcoming events."
+      button: "Join Our Community"
+
+    - image: "involve-citizen"
+      title: "Be a citizen scientist"
+      text: "We run regular crowdsourcing events for anyone across the world to take part. Contribute to one of our crowdsourcing events and become a citizen scientist for genomic equity!"
+      button: "Citizen Science"
+
+    - image: "involve-challenge"
+      title: "Solve a challenge"
+      text: "We work with our [challenge partners](/partner) to identify challenges relating to genomic equity that can be solved by our community (i.e., you!). Help us solve a challenge today."
+      button: "Challenges"
+
+    - image: "involve-workshop"
+      title: "Come to an event"
+      text: "We host regular events from collaborative brainstorming, to tutorials and lectures about genomic equity and open science. If anything is of interest to you, we'd love to have you there."
+      button: "Events"

@@ -1,0 +1,3 @@
+{{ define "main" }}
+  {{ with .Site.Data.tabs.about }}{{ partial "sections/tabcontents.html" . }}{{ end }}
+{{ end }}

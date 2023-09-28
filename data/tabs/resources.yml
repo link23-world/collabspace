@@ -1,0 +1,27 @@
+enabled: true
+id: "resources"
+
+content:
+  title: "Resources"
+  text: "In these pages you can explore resources provided by, and related to, link23. You can find our toolbox which contains curated tools related to genomic equity, as well as our sandbox where new tools are being developed. Like everything we do, all tools our Open, and we welcome contributions to our GitHub organisation from anyone at any time, we can even help provide some cloud resources so anyone can contribute without barriers."
+  cards:
+    - image: "resources-std"
+      title: "The link23 Standard"
+      text: "We want to ensure everything we do is held to the same standard. We have created criteria to help us assess both existing tools and newly developed tools to evaluate openness, accessibility, and more."
+      button: "Our Standard"
+
+    - image: "resources-toolbox"
+      title: "Access our toolbox"
+      text: "Our volunteers have worked hard to curate a list of Open tools for genomic equity. We welcome everyone to explore, use, and comment on tools in our toolbox. Let us know if anything is missing!"
+      button: "Toolbox"
+
+    - image: "resources-sandbox"
+      title: "Play in our sandbox"
+      text: "As well as curating existing tools, we are also interested in developing new and existing tools. We have our own GitHub organisation to act as a 'sandbox' for developing tools related to genomic equity."
+      button: "Sandbox"
+      external: "https://github.com/link23-world"
+
+    - image: "resources-similar"
+      title: "Explore similar initiatives"
+      text: "There are many other initiatives that are also interested in ensuring genomics is practised fairly and equitably. We have curated a list of similar initiatives that may be of interest."
+      button: "Similar Initiatives"

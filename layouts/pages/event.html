@@ -1,0 +1,26 @@
+{{ define "main" }}
+<section class="section standard p-5" id = "section-standards">
+    <div class="container" style="width: 60%;">
+      <div>
+        {{ $event_date := (.Params.event_date | time).Format "2 January 2006" }}
+        <p class="p-0 m-0 text-black-61">{{ print $event_date " " .Params.time }}</p>
+      </div>
+
+      <div class="fs-1 fw-bold text-primary">{{.Params.title}}</div>
+      {{ if isset .Params "partners" }}
+        <div class="fs-2 fw-bold text-light pb-3">with {{ delimit .Params.partners ", "}}</div>
+      {{ end }}
+      <div class="img-fluid justify-content-center text-center pb-4">
+        <img style="width: 300px" src='/images/event/posts/{{ .Params.image }}.png'>
+      </div>
+      <div>
+        <article class="blog-content pb-0 mb-0">
+          {{ .Content }}
+        </article>
+        <button type="button" class="btn btn-success d-flex m-auto mb-5">
+          <a href="{{ .Params.event_url }}" style="color: white;">Sign-up here!</a>
+        </button>
+      </div>
+    </div>
+  </section>
+{{ end }}

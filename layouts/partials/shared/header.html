@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<nav class="navbar navbar-expand-xl navbar-light bg-light py-1">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="{{ .Site.BaseURL }}">
+      {{ partial "utilities/image.html" "images/logo.png" }}
+      <span class="fs-5 fw-semibold text-danger">{{ .Site.Title }}</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto">
+        {{ range .Site.Menus.main }}
+          <li class="nav-item text-center">
+            {{ if .HasChildren }}
+                <div class="dropdown">
+                  <span class="dropbtn">
+                    {{ $url := print "/" .Name | lower }}
+                    <a style="display: inline-block;" class="nav-link text-primary px-4" href='{{ replace $url " " "" }}'>{{ .Name }}
+                      <span style="font-size: 12px; margin-left: 0em"> &#9661;</span>
+                    </a>
+                  </span>
+                  <ul class="dropdown-content">
+                  {{ range .Children }}
+                    {{ if gt (len .URL) 0 }}
+                      <a class="nav-link text-primary px-4" href="{{ .URL }}">{{ .Name }}&nbsp;&nbsp;<i class="fa fa-external-link"></i></a>
+                    {{ else }}
+                      {{ $url := print "/" .Name | lower }}
+                      <a class="nav-link text-primary px-4" href="{{ replace $url " " "" }}">{{ .Name }}</a>
+                    {{ end }}
+                  {{ end }}
+                  </ul>
+                </div>
+            {{ else }}
+              {{ if isset .Params "external"}}
+                <a class="nav-link text-primary px-4" href="{{ .external }}">{{ .Name }}</a>
+              {{ else }}
+                {{ $url := print "/" .Name | lower }}
+                <a class="nav-link text-primary px-4" href="{{ replace $url " " "" }}">{{ .Name }}</a>
+              {{ end }}
+            {{ end  }}
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</nav>

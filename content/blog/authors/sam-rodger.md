@@ -1,0 +1,5 @@
+Sam is responsible for overseeing strategy and policy at the Race and Health Observatory, making connections across the health and care landscape, and using robust evidence to inform national policy. Before joining the team, Sam worked at NHS England and NHS Improvement as policy lead for the Workforce Race Equality Standard Implementation team, where he oversaw an action research programme into how organisational culture is experienced by black and minority ethnic staff groups in the NHS.
+
+Sam has also worked at the General Medical Council on fitness to practice policy; at the Department of Health and Social Care on workforce strategy, with a particular focus on temporary staffing; and at Arts Council England, where he worked on making access to the arts in England more equitable.
+
+Sam also has an MA in Humanitarianism and Conflict Response, where his research focussed on global health, post-colonial international relations, and the intersection of the public and private sectors in global peacekeeping and humanitarian intervention.

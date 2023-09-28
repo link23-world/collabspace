@@ -1,0 +1,1 @@
+Sophia is the Design Research for the Diverse Data Programme at Genomics England. She researches the social determines of health from a community and creative lens. She is former McKinsey, D&AD New Blood pencil winner and co-founder of ‘On the Mend’ design studio. Her deep focus lies in the intersectionalities between race, class and gender on health.

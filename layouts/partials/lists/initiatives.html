@@ -1,0 +1,56 @@
+<section class="section window pb-5">
+  <div class="container">
+    <div class="row g-3">
+      <div class="col-md-6">
+        <div class="card h-100 p-4 pb-0 shadow bg-white rounded">
+          <div class="card-body text-left">
+            <h4 class="card-title text-center text-danger pb-2">
+              Public and Research Initiatives
+            </h4>
+            <p class="card-text text-primary">
+              <ul>
+                {{ range .public}}
+                  <li><a href="{{ .url }}">{{ .name }}</a></li>
+                {{ end }}
+              </ul>
+            </p>
+          </div>
+      </div>
+      </div>
+      <div class="col-md-6">
+          <div class="row">
+              <div class="col-md-12 mx-auto">
+                  <div class="card h-100 shadow p-4 bg-white rounded">
+                    <div class="card-body text-left">
+                      <h4 class="card-title text-center text-danger pb-2">Companies</h4>
+                        <p class="card-text text-primary">
+                          <ul>
+                            {{ range .companies}}
+                              <li><a href="{{ .url }}">{{ .name }}</a></li>
+                            {{ end }}
+                          </ul>
+                        </p>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div class="row">
+              <div class="col-md-12 mx-auto pt-3">
+                  <div class="card h-100 shadow p-4 bg-white rounded">
+                    <div class="card-body text-left">
+                      <h4 class="card-title text-center text-danger pb-2">Communities, Networks & Charities</h4>
+                        <p class="card-text text-primary">
+                          <ul>
+                            {{ range .communities}}
+                              <li><a href="{{ .url }}">{{ .name }}</a></li>
+                            {{ end }}
+                          </ul>
+                        </p>
+                    </div>
+                  </div>
+                </div>
+          </div>
+      </div>
+  </div>
+  <div style="height: 100px;"></div>
+</section>
