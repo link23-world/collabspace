@@ -6,7 +6,8 @@
       <div class="fs-1 fw-bold text-primary">{{.Params.title}}</div>
       <div class="fs-2 fw-bold text-light pb-3">by {{ delimit .Params.author ", "}}</div>
       <div class="img-fluid justify-content-center text-center pb-4">
-        <img style="width: 300px" src='/images/blog/posts/{{$date.Format "2006-01-02"}}.jpg'>
+        {{ $url := print "/images/blog/posts/" ($date.Format "2006-01-02") ".jpg" }}
+        <img style="width: 300px" src='{{ absURL $url }}'>
       </div>
       <div>
         <article class="blog-content pb-5">
@@ -26,7 +27,8 @@
         {{ with site.GetPage (print "blog/authors/" $author ".md") }}
           <div class="row alt-reverse-2 pb-3">
             <div class="col-4">
-              <img style="width: 250px" src="images/blog/authors/{{$author}}.jpg">
+              {{ $url := print "/images/blog/authors/" $author ".jpg" }}
+              <img style="width: 250px" src="{{ absURL $url }}">
             </div>
             <div class="col-8 pt-5">
               {{ .Content }}

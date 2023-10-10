@@ -5,7 +5,8 @@
       <div>{{$date.Format "2 January 2006"}}</div>
       <div class="fs-1 fw-bold text-primary">{{.Params.title}}</div>
       <div class="img-fluid justify-content-center text-center pb-4">
-        <img style="width: 300px" src='/images/newsletter/posts/{{$date.Format "2006-01-02"}}.jpg'>
+        {{ $url := print "/images/newsletter/posts/" ($date.Format "2006-01-02") ".jpg" }}
+        <img style="width: 300px" src="{{ absURL $url }}">
       </div>
       <div>
         <article class="blog-content pb-5">

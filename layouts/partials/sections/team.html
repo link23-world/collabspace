@@ -2,7 +2,7 @@
   <div class="row">
     {{ range .content }}
     <div class="col g-5 col-sm-4">
-      <img class="team-img" src="images/team/{{ .image }}">
+      <img class="team-img" src="{{ .Site.baseURL }}/images/team/{{ .image }}">
       <h4 class="text-left text-primary p-0 m-0">{{ .name }}</h4>
       <p class="text-left text-danger p-0 m-0">{{ .title }}</p>
       </div>

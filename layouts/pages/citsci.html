@@ -10,7 +10,8 @@
       <div class="fs-1 fw-bold text-primary">{{.Params.title}}</div>
       <div class="fs-2 fw-bold text-light pb-3">with {{ delimit .Params.partners ", "}}</div>
       <div class="img-fluid justify-content-center text-center pb-4">
-        <img style="width: 300px" src='/images/citsci/posts/{{path.BaseName .}}.png'>
+        {{ $url := print "/images/citsci/posts/" (path.BaseName .) ".png" }}
+        <img style="width: 300px" src="{{ absURL $url }}">
       </div>
       <div>
         <article class="blog-content pb-5">

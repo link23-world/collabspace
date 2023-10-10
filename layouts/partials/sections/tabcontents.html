@@ -1,3 +1,4 @@
+{{ $baseurl := .Site.BaseURL}}
 <section class="section services py-4">
   <div class="container">
     <div class="row justify-content-center pb-2">
@@ -26,7 +27,7 @@
           {{ end }}
           <div class="card h-100 p-4 pb-0 shadow bg-white rounded">
             <h4 class="card-title text-center text-danger pb-2">{{ .title }}</h4>
-            <img src="images/{{ .image }}.png">
+            <img src="{{ $baseurl }}/images/{{ .image }}.png">
             <div class="card-body text-center">
               <p class="card-text pb-4">{{ .text | markdownify }}</p>
               {{ if (isset . "external") }}
