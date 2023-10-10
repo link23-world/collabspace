@@ -44,7 +44,7 @@
                   <div class="aspect-ratio-62-5 my-2">
                     {{ $imgsrc := cond (isset .Params "image") .Params.image (. | path.BaseName) }}
                     {{ $imgsrc := cond (strings.Contains $imgsrc ".png") $imgsrc (print $imgsrc ".jpg") }}
-                    <img src='{{ $baseurl }}/images/{{ .Params.layout }}/posts/{{ $imgsrc }}'>
+                    <img src='{{ $baseurl }}images/{{ .Params.layout }}/posts/{{ $imgsrc }}'>
                   </div>
                   <p class="card-text text-black">{{ .Summary }}</p>
                   {{ if isset .Params "apply_date"}}
