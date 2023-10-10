@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use any code or other content from this repository, please cite it as below."
+authors:
+- family-names: "link23"
+title: "link23"
+version: "v0.1.0"
+doi: "[ZENODO DOI]"
+date-released: "DATE RELEASED"
+url: "https://github.com/link23-world/collabspace"
