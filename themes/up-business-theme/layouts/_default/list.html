@@ -1,0 +1,102 @@
+{{ define "main" }}
+  <section class="section blog-list py-5">
+    <div class="container">
+      <div class="row justify-content-center pb-2">
+        <div class="col-xl-11">
+          {{ with .Title }}
+            <h2 class="fs-1 fw-bold text-center text-primary pb-0">{{ . }}</h2>
+          {{ end }}
+          {{ with .Params.description | markdownify }}
+            <p class="text-left pb-0">{{ . }}</p>
+          {{ end }}
+        </div>
+      </div>
+      <div class="row g-4 pb-5">
+        {{ $pages := where .Pages ".Params.include" "=" "true"}}
+        {{ $sort_pages := sort $pages "File.Path" "desc" }}
+        {{ $paginator := .Paginate ($sort_pages) 9 }}
+        {{ range $paginator.Pages }}
+            <div class="col-12 col-md-6 col-lg-4">
+              <a class="card text-decoration-none h-100 border-0 p-1 pb-0 shadow bg-white rounded" href="{{ .Permalink }}">
+                <div class="card-body">
+                  {{ if isset .Params "event_date" }}
+                    {{ $event_date := (.Params.event_date | time).Format "2 January 2006" }}
+                    <p class="p-0 m-0 text-black-61">{{ print $event_date " " .Params.time }}</p>
+                  {{ else if isset .Params "date_live" }}
+                    {{ $date_live := (.Params.date_live | time).Format "2 January 2006" }}
+                    {{ $date_close := (.Params.date_close | time).Format "2 January 2006" }}
+                    <p class="p-0 m-0 text-black-61">{{ print $date_live " - " $date_close }}</p>
+                  {{ else if isset .Params "start_date"}}
+                    {{ $date_close := (.Params.start_date | time).Format "2 January 2006" }}
+                    <p class="p-0 m-0 text-black-61">Contract start: {{ $date_close }}</p>
+                  {{ else }}
+                    {{ $date := (. | path.BaseName) | time }}
+                    <p class="p-0 m-0 text-black-61">{{ $date.Format "2 January 2006" }}</p>
+                  {{ end }}
+
+                  <h5 class="fw-semibold p-0 m-0">{{ .Title }}</h5>
+                  {{ if isset .Params "author" }}
+                    <h6 class="p-0 text-light">by {{ delimit .Params.author ", " }}</h6>
+                  {{ else if isset .Params "partners" }}
+                    <h6 class="p-0 text-light">with {{ delimit .Params.partners ", " }}</h6>
+                  {{ end }}
+                  <div class="aspect-ratio-62-5 my-2">
+                    {{ $imgsrc := cond (isset .Params "image") .Params.image (. | path.BaseName) }}
+                    {{ $imgsrc := cond (strings.Contains $imgsrc ".png") $imgsrc (print $imgsrc ".jpg") }}
+                    <img src='/images/{{ .Params.layout }}/posts/{{ $imgsrc }}'>
+                  </div>
+                  <p class="card-text text-black">{{ .Summary }}</p>
+                  {{ if isset .Params "apply_date"}}
+                    {{ $event_fmt := (.Params.apply_date | time).Unix }}
+                    {{ if lt (sub now.Unix $event_fmt) 0 }}
+                      <span class="badge" style="background-color: var(--bs-success);">
+                        Apply by {{ (.Params.apply_date | time).Format "2 January 2006" }}
+                      </span>
+                    {{ else }}
+                      <span class="badge" style="background-color: var(--bs-danger);">
+                        Closed
+                      </span>
+                    {{ end }}
+                  {{ else if isset .Params "event_date"}}
+                    {{ $event_fmt := (.Params.event_date | time).Unix }}
+                    {{ if lt (sub now.Unix $event_fmt) 0 }}
+                      <span class="badge" style="background-color: var(--bs-info);">
+                        Coming up
+                      </span>
+                    {{ else }}
+                      <span class="badge" style="background-color: var(--bs-danger);">
+                        Closed
+                      </span>
+                    {{ end }}
+                  {{ else if isset .Params "date_live"}}
+                    {{ $event_live_fmt := (.Params.date_live | time).Unix }}
+                    {{ $event_end_fmt := (.Params.date_close | time).Unix }}
+                    {{ if lt (sub now.Unix $event_live_fmt) 0 }}
+                      <span class="badge" style="background-color: var(--bs-info);">
+                        Coming up
+                      </span>
+                    {{ else if gt (sub now.Unix $event_end_fmt) 0 }}
+                      <span class="badge" style="background-color: var(--bs-danger);">
+                        Closed
+                      </span>
+                    {{ else }}
+                      <span class="badge" style="background-color: var(--bs-success);">
+                        Live
+                      </span>
+                    {{ end }}
+                  {{ end }}
+                  {{ range .Params.tags}}
+                    <span class="badge badge-secondary" style="background-color: var(--bs-gray);">{{ . | title }}</span>
+                {{ end }}
+                </div>
+              </a>
+            </div>
+        {{ end }}
+      </div>
+      <div class="row pb-5">
+        {{ template "_internal/pagination.html" . }}
+      </div>
+    </div>
+  </section>
+  <div style="height: 300px;"></div>
+{{ end }}

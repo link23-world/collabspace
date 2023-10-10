@@ -1,0 +1,55 @@
+<section class="section hero py-5">
+  <div class="container">
+    <div class="row flex-column flex-xl-row-reverse">
+      <div class="col-12 col-xl-6 d-flex flex-column justify-content-center">
+          <h3 class="text-center text-primary text-xl-start">
+            {{ .content.text | markdownify }}
+          </h3>
+        <div class="d-flex flex-column flex-xl-row">
+          {{ range .buttons }}
+            <a class="btn btn-outline-primary px-4 my-1 ms-xl-5" href="{{ .url }}">{{ .label }}<span class="ms-2"></span></a>
+          {{ end }}
+        </div>
+      </div>
+      <div class="col-12 col-xl-6 d-flex flex-column justify-content-center hero-image">
+        <div class="gif-container container-fluid position-relative">
+          <div class="row">
+            <div class="col col-8 w-100">
+              <img id="dnatool-gif" class="gifimg" src="images/dnatool.gif" alt="Cartoon gif of double helix and cogs">
+            </div>
+            <div class="col col-8 w-100">
+              <img id="dnatool-img" class="gifimg" src="images/dnatool.png" alt="Cartoon image of double helix and cogs">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const dnagif = document.getElementById('dnatool-gif');
+  const dnaimg = document.getElementById('dnatool-img');
+
+  document.getElementsByClassName("navbar")[0].addEventListener("mouseover", GIFtoimg);
+  document.getElementsByClassName("navbar")[0].addEventListener("mouseout", imgtoGIF);
+
+  window.onscroll = function() { toggleGIF() };
+
+  function imgtoGIF() {
+    dnagif.style.opacity = '1';
+    dnaimg.style.opacity = '0';
+  }
+
+  function GIFtoimg() {
+    dnagif.style.opacity = '0';
+    dnaimg.style.opacity = '1';
+  }
+
+  function toggleGIF() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      GIFtoimg()
+    } else {
+      imgtoGIF()
+    }
+  }
+</script>
