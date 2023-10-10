@@ -12,10 +12,10 @@ content:
 
     - image: "images/dnasurf-2.png"
       title: "Sandbox and development"
-      text: "As well as curating tools, we will identify gaps for new tools to develop, which could mean creating a novel tool from scratch, or working on an existing tool. We have setup a [GitHub organisation](https://github.com/link23worldFIXME) that can be used by anyone as a sandbox, which means we are very open to prototypes and blue skies thinking to allow us to play with new ideas in a sage environment."
+      text: "As well as curating tools, we will identify gaps for new tools to develop, which could mean creating a novel tool from scratch, or working on an existing tool. We have setup a [GitHub organisation](https://github.com/link23-world) that can be used by anyone as a sandbox, which means we are very open to prototypes and blue skies thinking to allow us to play with new ideas in a sage environment."
       button:
         label: "Follow our GitHub"
-        url: "https://github.com/link23worldFIXME"
+        url: "https://github.com/link23-world"
 
     - image: "images/dnaworld-3.png"
       title: "Challenges and diverse data"

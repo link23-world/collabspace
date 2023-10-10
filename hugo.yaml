@@ -9,8 +9,6 @@ markup:
 
 title: "link23"
 
-# googleAnalytics: ""
-
 summaryLength: 20
 
 params:
@@ -23,15 +21,15 @@ params:
     faviconColor: "#000000"
 
   social:
-    x: "#"
-    linkedin: "#"
+    # x: "#"
+    # linkedin: "#"
     slack: "slack"
 
   location:
     - "Genomics England Limited, 1 Canada Square, London E14 5AB"
 
   contact:
-    - "hello@link23.world"
+    - "link23@genomicsengland.co.uk"
 
 menus:
   main:
