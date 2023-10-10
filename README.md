@@ -25,6 +25,13 @@ See our [contribution guidelines](/CONTRIBUTING.md) for details about how we cre
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="http://www.raphaelsonabend.co.uk"><img src="https://avatars.githubusercontent.com/u/25639974?v=4?s=100" width="100px;" alt="Raphael Sonabend"/><br /><sub><b>Raphael Sonabend</b></sub></a><br /><a href="#business-RaphaelS1" title="Business development">💼</a> <a href="#code-RaphaelS1" title="Code">💻</a> <a href="#content-RaphaelS1" title="Content">🖋</a> <a href="#ideas-RaphaelS1" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-RaphaelS1" title="Maintenance">🚧</a> <a href="#question-RaphaelS1" title="Answering Questions">💬</a> <a href="#research-RaphaelS1" title="Research">🔬</a> <a href="#tool-RaphaelS1" title="Tools">🔧</a></td>
+    </tr>
+  </tbody>
+</table>
 
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
