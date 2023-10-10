@@ -11,7 +11,7 @@
         <div class="fs-2 fw-bold text-light pb-3">with {{ delimit .Params.partners ", "}}</div>
       {{ end }}
       <div class="img-fluid justify-content-center text-center pb-4">
-        {{ $url := print "collabspace/images/event/posts/" .Params.image }}
+        {{ $url := print "images/event/posts/" .Params.image }}
         <img style="width: 300px" src="{{ absURL $url }}">
       </div>
       <div>
