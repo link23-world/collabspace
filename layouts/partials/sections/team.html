@@ -3,7 +3,7 @@
     {{ range .content }}
     <div class="col g-5 col-sm-4">
       {{ $url := print "images/team/" .image }}
-      <img class="team-img" src="{{ absURL $url }}">
+      <img class="team-img" src="/{{ $url }}">
       <h4 class="text-left text-primary p-0 m-0">{{ .name }}</h4>
       <p class="text-left text-danger p-0 m-0">{{ .title }}</p>
       </div>

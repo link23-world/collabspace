@@ -6,8 +6,8 @@
       <div class="fs-1 fw-bold text-primary">{{.Params.title}}</div>
       <div class="fs-2 fw-bold text-light pb-3">by {{ delimit .Params.author ", "}}</div>
       <div class="img-fluid justify-content-center text-center pb-4">
-        {{ $url := print "images/blog/posts/" ($date.Format "2006-01-02") ".jpg" }}
-        <img style="width: 300px" src='{{ absURL $url }}'>
+        {{ $url := print "/images/blog/posts/" ($date.Format "2006-01-02") ".jpg" }}
+        <img style="width: 300px" src='{{ $url }}'>
       </div>
       <div>
         <article class="blog-content pb-5">
@@ -28,7 +28,7 @@
           <div class="row alt-reverse-2 pb-3">
             <div class="col-4">
               {{ $url := print "images/blog/authors/" $author ".jpg" }}
-              <img style="width: 250px" src="{{ absURL $url }}">
+              <img style="width: 250px" src="/{{ $url }}">
             </div>
             <div class="col-8 pt-5">
               {{ .Content }}

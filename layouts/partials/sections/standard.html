@@ -9,7 +9,7 @@
           </div>
           <div class="col-12 col-xl-6 d-flex flex-column justify-content-center align-items-center">
             {{ $url := print "images/" .image }}
-            <img class="img-fluid" style="width: 50%;" src="{{ absURL $url }}">
+            <img class="img-fluid" style="width: 50%;" src="/{{ $url }}">
           </div>
         <h3 class="text-danger pb-3">How</h3>
         <table class="table table-hover table-sm table-responsive" style="border: 2px solid black;">
