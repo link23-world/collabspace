@@ -1,2 +1,6 @@
 .DS_Store
 .vscode/settings.json
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json

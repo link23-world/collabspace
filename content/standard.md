@@ -1,6 +1,6 @@
 ---
 title: "Standard"
-aliases: ["/ourstandard"]
+aliases: ["ourstandard"]
 type: "pages"
 layout: "standard"
 ---

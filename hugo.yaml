@@ -25,7 +25,7 @@ params:
   social:
     x: "#"
     linkedin: "#"
-    slack: "/slack"
+    slack: "slack"
 
   location:
     - "Genomics England Limited, 1 Canada Square, London E14 5AB"
@@ -123,35 +123,35 @@ menus:
       weight: 10
 
     - name: "About"
-      url: "/about"
+      url: "about"
       weight: 20
 
     - name: "Resources"
-      url: "/resources"
+      url: "resources"
       weight: 30
 
     - name: "Volunteering"
-      url: "/volunteering"
+      url: "volunteering"
       weight: 40
 
     - name: "Get Involved"
-      url: "/getinvolved"
+      url: "getinvolved"
       weight: 50
 
     - name: "Updates"
-      url: "/updates"
+      url: "updates"
       weight: 60
 
     - name: "Partner"
-      url: "/partner"
+      url: "partner"
       weight: 70
 
     - name: "Contact"
-      url: "/contact"
+      url: "contact"
       weight: 80
 
     - name: "Slack"
-      url: "/slack"
+      url: "slack"
       weight: 90
 
 taxonomies:

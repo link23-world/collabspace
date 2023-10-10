@@ -8,10 +8,10 @@ content:
 
     buttons:
       - label: "About us"
-        url: "/aboutus"
+        url: "aboutus"
 
       - label: "Meet the team"
-        url: "/team"
+        url: "team"
 
   - image: "images/dnacartoon-2.png"
     title: "Resources for genomic equity"
@@ -19,13 +19,13 @@ content:
 
     buttons:
       - label: "Toolbox"
-        url: "/toolbox"
+        url: "toolbox"
 
       # - label: "Sandbox"
-      #   url: "/sandbox"
+      #   url: "sandbox"
 
       - label: "Similar Initiatives"
-        url: "/initiatives"
+        url: "initiatives"
 
   - image: "images/dnatool-3.png"
     title: "Volunteer with link23"
@@ -33,13 +33,13 @@ content:
 
     buttons:
       - label: "Become a Volunteer"
-        url: "/volunteer"
+        url: "volunteer"
 
       - label: "Organise an Event"
-        url: "/organise"
+        url: "organise"
 
       - label: "Join our slack"
-        url: "/slack"
+        url: "slack"
 
   - image: "images/dnatown-1.png"
     title: "Get Involved in link23 events"
@@ -47,13 +47,13 @@ content:
 
     buttons:
       - label: "Become a Citizen Scientist"
-        url: "/citizen"
+        url: "citizen"
 
       - label: "Take part in a challenge"
-        url: "/challenges"
+        url: "challenges"
 
       - label: "Join a workshop"
-        url: "/events"
+        url: "events"
 
   - image: "images/dnacartoon-1.png"
     title: "Stay up to date"
@@ -61,10 +61,10 @@ content:
 
     buttons:
       - label: "Read our blog"
-        url: "/blog"
+        url: "blog"
 
       - label: "Sign-up to the newsletter"
-        url: "/newsletter"
+        url: "newsletter"
 
   - image: "images/dnatool-2.png"
     title: "Partner with link23"
@@ -76,4 +76,4 @@ content:
 
     buttons:
       - label: "Contact"
-        url: "/contact"
+        url: "contact"

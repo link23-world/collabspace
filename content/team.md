@@ -1,6 +1,6 @@
 ---
 title: "Meet the Team"
-aliases: ["/meettheteam"]
+aliases: ["meettheteam"]
 type: "pages"
 layout: "team"
 ---

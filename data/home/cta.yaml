@@ -6,4 +6,4 @@ content:
   image: "images/dnaworld-1.png"
   button:
     label: "Join our Slack"
-    url: "/slack"
+    url: "slack"

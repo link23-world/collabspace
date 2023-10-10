@@ -1,6 +1,6 @@
 ---
 title: "Partner"
-aliases: ["/partner"]
+aliases: ["partner"]
 type: "pages"
 layout: "partner"
 ---

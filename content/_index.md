@@ -1,4 +1,4 @@
 +++
 author = "Hugo Authors"
-aliases = ["/home", "/index"]
+aliases = ["home", "index"]
 +++
