@@ -1,3 +1,4 @@
+{{ $baseurl := .Site.BaseURL }}
 <footer class="shared footer bg-blue-light pt-3">
   <div class="container">
     <div class="row pb-2">
@@ -7,9 +8,9 @@
         <p class="small text-black-61"><a href="mailto:hello@link23.worldFIXME">hello@link23.world</a></p>
         {{ with .Site.Params.social }}
         <ul class="d-flex justify-content-center justify-content-xl-start list-unstyled">
-          <li class="p-2"><a class="d-flex align-items-center justify-content-center" href="{{ .linkedin }}"><img class="size-24" src="/images/icons/linkedin.png"></a></li>
-          <li class="p-2"><a class="d-flex align-items-center justify-content-center" href="{{ .x }}"><img class="size-24" src="/images/icons/x.png"></a></li>
-          <li class="p-2"><a class="d-flex align-items-center justify-content-center" href="{{ .slack }}"><img class="size-24" src="/images/icons/slack.png"></a></li>
+          <li class="p-2"><a class="d-flex align-items-center justify-content-center" href="{{ .linkedin }}"><img class="size-24" src="{{ $baseurl }}/images/icons/linkedin.png"></a></li>
+          <li class="p-2"><a class="d-flex align-items-center justify-content-center" href="{{ .x }}"><img class="size-24" src="{{ $baseurl }}/images/icons/x.png"></a></li>
+          <li class="p-2"><a class="d-flex align-items-center justify-content-center" href="{{ .slack }}"><img class="size-24" src="{{ $baseurl }}/images/icons/slack.png"></a></li>
         </ul>
         {{ end }}
       </div>
@@ -29,7 +30,7 @@
         <p class="small text-black-61">link23 does not necessarily reflect the views of Genomics England. </p>
       </div>
       <div class="col-12 col-xl-3 text-center text-xl-start">
-        <img src="/images/logo-gel.png" alt="Genomics England Logo" width="250px" height="144px" style="float: right;">
+        <img src="{{ $baseurl }}/images/logo-gel.png" alt="Genomics England Logo" width="250px" height="144px" style="float: right;">
       </div>
     </div>
     <div class="row">

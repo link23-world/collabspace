@@ -1,8 +1,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+{{ $baseurl := .Site.BaseURL}}
+
 <nav class="navbar navbar-expand-xl navbar-light bg-light py-1">
   <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="{{ .Site.BaseURL }}">
+    <a class="navbar-brand d-flex align-items-center" href="{{ $baseurl }}">
       {{ partial "utilities/image.html" "images/logo.png" }}
       <span class="fs-5 fw-semibold text-danger">{{ .Site.Title }}</span>
     </a>
@@ -16,7 +18,7 @@
             {{ if .HasChildren }}
                 <div class="dropdown">
                   <span class="dropbtn">
-                    {{ $url := .Name | lower }}
+                    {{ $url := print $baseurl (.Name | lower) }}
                     <a style="display: inline-block;" class="nav-link text-primary px-4" href='{{ replace $url " " "" }}'>{{ .Name }}
                       <span style="font-size: 12px; margin-left: 0em"> &#9661;</span>
                     </a>
@@ -26,7 +28,7 @@
                     {{ if gt (len .URL) 0 }}
                       <a class="nav-link text-primary px-4" href="{{ .URL }}">{{ .Name }}&nbsp;&nbsp;<i class="fa fa-external-link"></i></a>
                     {{ else }}
-                      {{ $url := .Name | lower }}
+                      {{ $url := print $baseurl (.Name | lower) }}
                       <a class="nav-link text-primary px-4" href="{{ replace $url " " "" }}">{{ .Name }}</a>
                     {{ end }}
                   {{ end }}
@@ -36,7 +38,7 @@
               {{ if isset .Params "external"}}
                 <a class="nav-link text-primary px-4" href="{{ .external }}">{{ .Name }}</a>
               {{ else }}
-                {{ $url := .Name | lower }}
+                {{ $url := print $baseurl (.Name | lower) }}
                 <a class="nav-link text-primary px-4" href="{{ replace $url " " "" }}">{{ .Name }}</a>
               {{ end }}
             {{ end  }}
