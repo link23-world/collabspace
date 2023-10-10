@@ -6,7 +6,7 @@
 
 This repository contains the code for the [link23 collaboration space](https://www.link23.world/).
 We welcome all contributions to help us maintain this space (by definition it is collaborative!).
-If you're interested in joining the link23 community, please [sign-up to our Slack](https://www.link23.world/slack) and if you have time to actively volunteer then please do consider [signing-up as a link23 volunteer]((https://www.link23.world/volunteer).
+If you're interested in joining the link23 community, please [sign-up to our Slack](https://www.link23.world/slack) and if you have time to actively volunteer then please do consider [signing-up as a link23 volunteer](https://www.link23.world/volunteer).
 
 
 ## Licensing
