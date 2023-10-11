@@ -44,11 +44,16 @@ In this repository we recognise contributions from *all contributors* across all
 
 The following people (who don't have GitHub accounts) also contributed:
 
+- Abraham Owodunni 🖊️🤔🔬👀
+- Aishaini Puvanendran 🤔
 - Alice Popejoy 🔧
+- Allissa Dillman 🖊️🤔🔬👀
 - Aman Ali 👀
 - Amanda Pichini 👀
 - Anna Need 👀
+- Chenai Mandangu 🤔
 - Dan Rhodes 👀
+- Dine Roseline Dzekem 🤔
 - Ed Hollox 👀
 - Ewan Birney 🔧
 - Furaha Asani 👀
@@ -56,9 +61,15 @@ The following people (who don't have GitHub accounts) also contributed:
 - Ismael Kherroubi Garcia 👀
 - Lyra Nightingale 👀
 - Mahantesh Biradar 👀
+- Maria Sobczyk 🤔
+- Marie Nugent 💼🖊️📋🤔🚧📆💬👀📢
 - Matteo Fumagalli 🔧
+- Maxine Mackintosh 💼🖊️📋🤔🚧📆💬👀📢
 - Salim Shaikh 👀
 - Sam Tallman 👀
 - Sasha Henriques 👀
 - Semine Long-Callesen 🔧
+- Shing Hei Zhan 🤔
+- Sobia Raza 🖋📋🤔🚧📆🔬
 - Summaiya 👀
+- Umar Farouk Ahmad🤔
