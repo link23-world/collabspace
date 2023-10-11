@@ -210,14 +210,14 @@ figcaption {
 }
 
 .team-img {
-  width: 216px;
-  height: 231px;
+  /* width: 216px;
+  height: 231px; */
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 
-p {
-  font-size: 17px;
+p, li {
+  font-size: 18px;
 }
 
 h1, h2, h3 {

@@ -40,14 +40,6 @@ menus:
     - name: "About"
       weight: 20
 
-    - name: "About Us"
-      parent: "About"
-      weight: 10
-
-    - name: "Meet the Team"
-      parent: "About"
-      weight: 20
-
     - name: "Resources"
       weight: 30
 
@@ -151,6 +143,10 @@ menus:
     - name: "Slack"
       url: "slack"
       weight: 90
+
+    - name: "GitHub"
+      url: "https://github.com/link23-world/collabspace"
+      weight: 100
 
 taxonomies:
   series: "series"

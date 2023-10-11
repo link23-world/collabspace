@@ -18,7 +18,7 @@
         <ul class="list-unstyled list-footer">
           {{ range .Site.Menus.footer }}
             <li class="">
-              <a class="small text-black-61 text-decoration-none" href="{{ .URL }}">{{ .Name }}</a>
+              <a class="small text-black-61 text-decoration-none" href="/{{ .URL }}">{{ .Name }}</a>
             </li>
           {{ end }}
         </ul>

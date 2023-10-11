@@ -1,13 +1,14 @@
 <section class="section services pb-5">
   <p>
-    Our branding (logo and link23 images) is licenced under <a href="https://creativecommons.org/licenses/by-nd/4.0/">CC BY-ND 4.0</a>, so you can share it as you like but you cannot make changes to our templates. All other content on link23 is licenced under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> so you can share and adapt any materials you find in these pages as long as you cite us. The code to build this collaboration space is licenced under <a href="https://opensource.org/license/mit/">MIT</a> and is freely available from <a href="https://github.com/link23-world/collabspace">our GitHub</a>, this means you can share and adapt the source code in anyway you like, as long as you cite us.<br><br>
+    Our full licence can be read on our <a href="https://github.com/link23-world/collabspace/blob/main/LICENSE.md">GitHub repository</a>, in summary (this does not replace the legal text):<br>
+    Our branding (logo and link23 images) is licenced under <a href="https://creativecommons.org/licenses/by-nd/4.0/">CC BY-ND 4.0</a>, so you can share it as you like but you cannot make changes to our templates. All other content on link23 is licenced under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> so you can share and adapt any materials you find in these pages as long as you cite us. The code to build this collaboration space is licenced under <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a> and is freely available from <a href="https://github.com/link23-world/collabspace">our GitHub</a>, this means you can share and adapt the source code in anyway you like, as long as you cite us.<br><br>
 
     We suggest the following attribution statement to cite link23 (click to copy!):
   </p>
 
   <div class="tooltip2 pb-3">
-    <span class="tooltiptext">Copy with today's date</span>
-    <div class="copy-box px-4 py-2" id="copyweb" onclick="copybox(copyweb)">
+    <span class="tooltiptext" id="tooltipweb">Click to copy with today's date</span>
+    <div class="copy-box px-4 py-2" id="copyweb" onclick="copybox(copyweb)" onmouseleave="resettip(tooltipweb)">
       “link23. ({Year accessed}). “Accessed on: {YYYY-MM-DD}”. https://www.link23.world/.”
     </div>
   </div>
@@ -15,8 +16,8 @@
   <p>Or if you want to use the source code that built this website:</p>
 
   <div class="tooltip2 pb-3">
-    <span class="tooltiptext">Copy with today's date</span>
-    <div class="copy-box px-4 py-2" id="copycode" onclick="copybox(copycode)">
+    <span class="tooltiptext" id="tooltipcode">Click to copy with today's date</span>
+    <div class="copy-box px-4 py-2" id="copycode" onclick="copybox(copycode)" onmouseleave="resettip(tooltipcode)">
       “link23. ({Year accessed}). “Accessed on: {YYYY-MM-DD}”. https://github.com/link23-world/collabspace.”
     </div>
   </div>
@@ -35,5 +36,11 @@
 
     navigator.clipboard.writeText(text);
     console.log("Copied: " + text);
+
+    $("#" + obj.id.replace("copy", "tooltip")).text("Copied!");
+  }
+
+  function resettip(obj) {
+    obj.innerText = "Click to copy with today's date";
   }
 </script>

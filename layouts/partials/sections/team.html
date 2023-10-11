@@ -1,12 +1,12 @@
 <div class="container">
-  <div class="row">
-    {{ range .content }}
-    <div class="col g-5 col-sm-4">
-      {{ $url := print "images/team/" .image }}
-      <img class="team-img" src="/{{ $url }}">
-      <h4 class="text-left text-primary p-0 m-0">{{ .name }}</h4>
-      <p class="text-left text-danger p-0 m-0">{{ .title }}</p>
+  {{ range .content }}
+  <div class="row pb-4">
+    <div class="col-12 d-flex align-items-center flex-wrap justify-content-center">
+      <img class="team-img w-50 h-80"
+        src="/images/team/{{ .image }}">
+      <h4 class="text-center text-primary p-0 m-0 w-100">{{ .name }}</h4>
+      <p class="text-center text-danger p-0 m-0 w-100">{{ .title }}</p>
       </div>
-      {{ end }}
   </div>
+  {{ end }}
 </div>
