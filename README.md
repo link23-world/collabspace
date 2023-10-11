@@ -28,8 +28,8 @@ In this repository we recognise contributions from *all contributors* across all
 <!-- markdownlint-disable -->
 <table>
   <tbody>
-    <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://www.link23.world/"><img src="https://avatars.githubusercontent.com/u/138118852?v=4?s=100" width="100px;" alt="Raphael Sonabend"/><br /><sub><b>Raphael Sonabend</b></sub></a><br /><a href="#business-RaphaelGEL" title="Business development">💼</a> <a href="#code-RaphaelGEL" title="Code">💻</a> <a href="#content-RaphaelGEL" title="Content">🖋</a> <a href="#ideas-RaphaelGEL" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-RaphaelGEL" title="Maintenance">🚧</a> <a href="#question-RaphaelGEL" title="Answering Questions">💬</a> <a href="#research-RaphaelGEL" title="Research">🔬</a> <a href="#tool-RaphaelGEL" title="Tools">🔧</a> <a href="#doc-RaphaelGEL" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/drhodesbrc"><img src="https://avatars.githubusercontent.com/u/14894770?v=4?s=100" width="100px;" alt="drhodesbrc"/><br /><sub><b>drhodesbrc</b></sub></a><br /><a href="#review-drhodesbrc" title="Reviewed Pull Requests">👀</a> <a href="#ideas-drhodesbrc" title="Ideas, Planning, & Feedback">🤔</a> <a href="#projectManagement-drhodesbrc" title="Project Management">📆</a></td>
     </tr>
   </tbody>
 </table>
@@ -43,11 +43,16 @@ In this repository we recognise contributions from *all contributors* across all
 
 The following people (who don't have GitHub accounts) also contributed:
 
+- Abraham Owodunni 🖊️🤔🔬👀
+- Aishaini Puvanendran 🤔
 - Alice Popejoy 🔧
+- Allissa Dillman 🖊️🤔🔬👀
 - Aman Ali 👀
 - Amanda Pichini 👀
 - Anna Need 👀
+- Chenai Mandangu 🤔
 - Dan Rhodes 👀
+- Dine Roseline Dzekem 🤔
 - Ed Hollox 👀
 - Ewan Birney 🔧
 - Furaha Asani 👀
@@ -55,9 +60,15 @@ The following people (who don't have GitHub accounts) also contributed:
 - Ismael Kherroubi Garcia 👀
 - Lyra Nightingale 👀
 - Mahantesh Biradar 👀
+- Maria Sobczyk 🤔
+- Marie Nugent 💼🖊️📋🤔🚧📆💬👀📢
 - Matteo Fumagalli 🔧
+- Maxine Mackintosh 💼🖊️📋🤔🚧📆💬👀📢
 - Salim Shaikh 👀
 - Sam Tallman 👀
 - Sasha Henriques 👀
 - Semine Long-Callesen 🔧
+- Shing Hei Zhan 🤔
+- Sobia Raza 🖋📋🤔🚧📆🔬
 - Summaiya 👀
+- Umar Farouk Ahmad🤔
