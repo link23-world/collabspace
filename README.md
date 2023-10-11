@@ -21,6 +21,7 @@ See our [contribution guidelines](/CONTRIBUTING.md) for details about how you ca
 ## Contributors
 
 See our [contribution guidelines](/CONTRIBUTING.md) for details about how we credit our contributors.
+In this repository we recognise contributions from *all contributors* across all of our repositories, so we can watch our community grow together!
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
