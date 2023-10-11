@@ -49,12 +49,10 @@ The following people (who don't have GitHub accounts) also contributed:
 - Abraham Owodunni 🖊️🤔🔬👀
 - Aishaini Puvanendran 🤔
 - Alice Popejoy 🔧
-- Allissa Dillman 🖊️🤔🔬👀
 - Aman Ali 👀
 - Amanda Pichini 👀
 - Anna Need 👀
 - Chenai Mandangu 🤔
-- Dan Rhodes 👀
 - Dine Roseline Dzekem 🤔
 - Ed Hollox 👀
 - Ewan Birney 🔧
@@ -74,4 +72,3 @@ The following people (who don't have GitHub accounts) also contributed:
 - Shing Hei Zhan 🤔
 - Sobia Raza 🖋📋🤔🚧📆🔬
 - Summaiya 👀
-- Umar Farouk Ahmad🤔
