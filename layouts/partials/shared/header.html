@@ -16,10 +16,9 @@
             {{ if .HasChildren }}
                 <div class="dropdown">
                   <span class="dropbtn">
-                    {{ $url := print "/" (.Name | lower) }}
-                    <a style="display: inline-block;" class="nav-link text-primary px-4" href='{{ replace $url " " "" }}'>{{ .Name }}
+                    <p style="display: inline; cursor: default" class="nav-link text-primary px-4">{{ .Name }}
                       <span style="font-size: 12px; margin-left: 0em"> &#9661;</span>
-                    </a>
+                    </p>
                   </span>
                   <ul class="dropdown-content">
                   {{ range .Children }}
@@ -37,7 +36,7 @@
                 <a class="nav-link text-primary px-4" href="{{ .external }}">{{ .Name }}</a>
               {{ else }}
                 {{ $url := print "/" (.Name | lower) }}
-                <a class="nav-link text-primary px-4" href="{{ replace $url " " "" }}">{{ .Name }}</a>
+                <a style="display: inline;" class="nav-link text-primary px-4" href="{{ replace $url " " "" }}">{{ .Name }}</a>
               {{ end }}
             {{ end  }}
           </li>
