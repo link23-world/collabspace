@@ -1,7 +1,7 @@
 {
   "projectName": "collabspace",
   "projectOwner": "link23-world",
-  "contributorsSortAlphabetically": "true",
+  "contributorsSortAlphabetically": true,
   "files": [
     "README.md"
   ],
