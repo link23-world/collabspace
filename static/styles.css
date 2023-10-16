@@ -55,7 +55,7 @@ img {
 }
 
 strong {
-  color: #FC4E1A;
+  color: var(--bs-danger);
 }
 
 .card-partners {
