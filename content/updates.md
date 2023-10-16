@@ -1,4 +1,0 @@
----
-type: "tabhome"
-layout: "updates"
----

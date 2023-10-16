@@ -93,13 +93,14 @@ menus:
     - name: "Updates"
       weight: 60
 
-    - name: "Newsletter"
-      parent: "Updates"
-      weight: 20
-
     - name: "Blog"
       parent: "Updates"
       weight: 10
+
+    # FIXME
+    # - name: "Newsletter"
+    #   parent: "Updates"
+    #   weight: 20
 
     - name: "Partner"
       weight: 70
