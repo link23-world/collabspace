@@ -47,7 +47,6 @@ In this repository we recognise contributions from *all contributors* across all
 
 The following people (who don't have GitHub accounts) also contributed:
 
-- Abraham Owodunni 🖊️🤔🔬👀
 - Aishaini Puvanendran 🤔
 - Alice Popejoy 🔧
 - Aman Ali 👀
