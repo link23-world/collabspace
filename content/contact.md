@@ -19,7 +19,7 @@ Become part of the link23 community and [join our Slack](/slack)!
 
 Use the #link23 hashtag on social media to find others chatting about this project.
  <!-- and follow @link23 on [Twitter](FIXME) and [LinkedIn](FIXME). -->
-
+<!--
 ### 📰 Receive Updates
 
-Sign up to [our newsletter](/newsletter) to get quarterly updates about link23!
+Sign up to [our newsletter](/newsletter) to get quarterly updates about link23! -->
