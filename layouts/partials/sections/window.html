@@ -1,8 +1,8 @@
 <section class="section window pb-5 pt-3">
-  <div class="container" id="home" style="">
+  <div class="container" id="home" style="min-height: 78vh;">
     <div class="row gx-5 h-100">
       <div class="col-12 col-lg-4 h-100 pb-3">
-        <div class="card h-100 p-4 shadow bg-white rounded">
+        <div class="card h-100 p-4 shadow bg-white rounded" style="min-height: 79vh">
           <div class="card-body text-left">
             <p class="card-text text-primary">
               <strong>link23</strong> is an Open initiative on a mission to improve equity and diversity in the providers, users and beneficiaries of genomic tools and data worldwide. We work across four overlapping pillars focused on:<br><Br>
@@ -21,8 +21,8 @@
             <div class="position-relative">
               <div class="row m-auto w-100">
                 <div class="col-12">
-                  <img id="dnatool-gif" class="gifimg mx-auto w-50" src="images/dnatool.gif" alt="Cartoon gif of double helix and cogs">
-                  <img id="dnatool-img" class="gifimg mx-auto w-50" src="images/dnatool.png" alt="Cartoon image of double helix and cogs">
+                  <img id="dnatool-gif" class="gifimg mx-auto w-100" src="images/dnatool.gif" alt="Cartoon gif of double helix and cogs">
+                  <img id="dnatool-img" class="gifimg mx-auto w-100" src="images/dnatool.png" alt="Cartoon image of double helix and cogs">
                 </div>
               </div>
           </div>
@@ -32,10 +32,10 @@
       <div class="col-12 col-lg-4 h-100">
         {{ range .content.row1}}
         <div class="row h-50 pb-3">
-            <div class="card shadow p-4 bg-white rounded h-100 w-100">
+            <div class="card shadow p-4 bg-white rounded h-100 w-100" style="min-height: 39vh;">
               <div class="card-body text-center w-100">
                   <h4 class="card-title text-center text-danger pb-2">{{ .title }}</h4>
-                  <img class="w-50 rounded-circle" src="images/window/{{ .image }}.png">
+                  <img class="w-75 rounded-circle" src="images/window/{{ .image }}.png">
                   <div class="text-center m-0 p-0">
                     {{ range .button }}
                     <a class="btn btn-outline-primary px-2 mt-4 ms-sm-1 text-center" href='{{ .url }}'>{{ .label }}</a>
@@ -49,10 +49,10 @@
       <div class="col-12 col-lg-4 h-100">
         {{ range .content.row2}}
         <div class="row h-50 pb-3">
-            <div class="card shadow p-4 bg-white rounded h-100 w-100">
+            <div class="card shadow p-4 bg-white rounded h-100 w-100" style="min-height: 39vh;">
               <div class="card-body text-center w-100">
                   <h4 class="card-title text-center text-danger pb-2">{{ .title }}</h4>
-                  <img class="w-50 rounded-circle" src="images/window/{{ .image }}.png">
+                  <img class="w-75 rounded-circle" src="images/window/{{ .image }}.png">
                   <div class="text-center m-0 p-0">
                     {{ range .button }}
                     <a class="btn btn-outline-primary px-2 mt-4 ms-sm-1 text-center" href='{{ .url }}'>{{ .label }}</a>
