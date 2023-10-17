@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <footer class="shared footer bg-blue-light pt-3">
   <div class="container">
     <div class="row pb-2">
@@ -18,7 +20,10 @@
         <ul class="list-unstyled list-footer">
           {{ range .Site.Menus.footer }}
             <li class="">
-              <a class="small text-black-61 text-decoration-none" href="/{{ .URL }}">{{ .Name }}</a>
+              <a class="small text-black-61 text-decoration-none" href="{{ .URL }}">{{ .Name }}</a>
+              {{ if or (eq .Name "GitHub") (eq .Name "Sandbox") }}
+                <i class="fa fa-external-link"></i>
+              {{ end }}
             </li>
           {{ end }}
         </ul>
@@ -34,7 +39,7 @@
     </div>
     <div class="row">
       <div class="col-12">
-          <p class="small text-black-61 text-center">© 2023 link23. All content on link23 is licenced under a <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 licence</a>. | <a href="https://www.genomicsengland.co.uk/privacy-policy">Privacy Policy</a> | <a href="https://genomicsenglandltd.sharepoint.com/:b:/s/Link23-world/ETzoVuPpl_9PimLxf6IqOCQBlag2jM19KKqhOsgVswqH2g?e=DjkClJ">Terms of Use</a> </p>
+          <p class="small text-black-61 text-center">© 2023 link23. Full details of our creative commons licence <a href="https://github.com/link23-world/collabspace/blob/main/LICENSE.md">available here</a>. | <a href="https://www.genomicsengland.co.uk/privacy-policy">Privacy Policy</a> | <a href="https://genomicsenglandltd.sharepoint.com/:b:/s/Link23-world/ETzoVuPpl_9PimLxf6IqOCQBlag2jM19KKqhOsgVswqH2g?e=DjkClJ">Terms of Use</a> </p>
       </div>
     </div>
   </div>

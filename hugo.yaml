@@ -110,44 +110,49 @@ menus:
 
   footer:
     - name: "Home"
-      url: "/"
+      url: "/#"
       weight: 10
 
     - name: "About"
-      url: "about"
+      url: "/about"
       weight: 20
 
-    - name: "Resources"
-      url: "resources"
+    - name: "Toolbox"
+      url: "/toolbox"
       weight: 30
 
-    - name: "Volunteering"
-      url: "volunteering"
+    - name: "Sandbox"
+      url: "https://github.com/link23-world"
+      weight: 35
+
+    - name: "Volunteer"
+      url: "/becomeavolunteer"
       weight: 40
 
-    - name: "Get Involved"
-      url: "getinvolved"
+    - name: "Slack"
+      url: "/slack"
       weight: 50
 
-    - name: "Updates"
-      url: "updates"
+    - name: "Events"
+      url: "/events"
       weight: 60
 
+    - name: "Blog"
+      url: "/blog"
+      weight: 65
+
     - name: "Partner"
-      url: "partner"
+      url: "/partner"
       weight: 70
 
     - name: "Contact"
-      url: "contact"
+      url: "/contact"
       weight: 80
-
-    - name: "Slack"
-      url: "slack"
-      weight: 90
 
     - name: "GitHub"
       url: "https://github.com/link23-world/collabspace"
       weight: 100
+      external: "true"
 
 taxonomies:
   series: "series"
