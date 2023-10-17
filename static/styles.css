@@ -233,3 +233,7 @@ h1, h2, h3 {
   border-bottom: 1px black solid;
   box-shadow: 0 13px 10px -12px var(--bs-gray-700);
 }
+
+.w-60 {
+  width: 60% !important;
+}
