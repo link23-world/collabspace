@@ -1,5 +1,8 @@
 # link23 collaboration space
 
+[![DOI](https://zenodo.org/badge/697706298.svg)](https://zenodo.org/doi/10.5281/zenodo.10013579)
+[![Static Badge](https://img.shields.io/badge/link23_Tool-Stable-purple?style=plastic&label=link23%20Tool&color=%23005eb8)](https://www.link23.world/)
+
 [![All Contributors](https://img.shields.io/github/all-contributors/link23-world/collabspace?color=ee8449&style=flat-square)](#contributors)
 
 ## About this repository
