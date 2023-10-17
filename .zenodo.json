@@ -1,8 +1,6 @@
 {
     "creators": [
-        {
-            "name": "The link23 Community"
-        }
+        {"name": "The link23 Community"}
     ],
 
     "keywords": [
@@ -14,9 +12,5 @@
       "guides",
       "ethics",
       "community"
-    ],
-
-    "communities": [
-        {"identifier": "link23"}
     ]
 }
