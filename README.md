@@ -19,7 +19,7 @@ This means you **cannot make changes to link23 branding** but can adapt and redi
 
 ## Contributing to this repository
 
-See our [contribution guidelines](/CONTRIBUTING.md) for details about how you can contribute to this repository.
+See our [contribution guidelines](/CONTRIBUTING.md) for details about how you can contribute to this repo.
 
 ## Contributors
 
