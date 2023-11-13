@@ -24,7 +24,7 @@
                     {{ if gt (len .URL) 0 }}
                       <a class="nav-link text-primary px-4" href="{{ .URL }}">{{ .Name }}&nbsp;&nbsp;<i class="fa fa-external-link"></i></a>
                     {{ else }}
-                      {{ $url := print "/" (.Name | lower) }}
+                      {{ $url := .Name | lower }}
                       <a class="nav-link text-primary px-4" href="{{ replace $url " " "" }}">{{ .Name }}</a>
                     {{ end }}
                   {{ end }}
@@ -34,7 +34,7 @@
               {{ if isset .Params "external"}}
                 <a class="d-inline nav-link text-primary px-4" href="{{ .external }}">{{ .Name }}</a>
               {{ else }}
-                {{ $url := print "/" (.Name | lower) }}
+                {{ $url := .Name | lower }}
                 <a class="d-inline nav-link text-primary px-4" href="{{ replace $url " " "" }}">{{ .Name }}</a>
               {{ end }}
             {{ end  }}
