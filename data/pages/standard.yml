@@ -2,8 +2,6 @@ enabled: true
 id: "standard"
 
 content:
-  title: "Standard"
-  text: "So you're interested in partnering with link23? Below are the different types of ways you can partner with us and some reasons why you might want to work with us. Click on the cards to learn about the partners we are looking for."
   category:
     - title: "Openness"
       image: "std-open.png"
