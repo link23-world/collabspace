@@ -1,15 +1,15 @@
 # link23 collaboration space
 
-[![Static Badge](https://img.shields.io/badge/link23_Tool-Stable-purple?style=plastic&label=link23%20Tool&color=%23005eb8)](https://www.link23.world/)
+[![Static Badge](https://img.shields.io/badge/link23_Tool-Stable-purple?style=plastic&label=link23%20Tool&color=%23005eb8)](https://link23-world.github.io/collabspace/)
 
 [![All Contributors](https://img.shields.io/github/all-contributors/link23-world/collabspace?color=ee8449&style=flat-square)](#contributors)
 [![DOI](https://zenodo.org/badge/697706298.svg)](https://zenodo.org/doi/10.5281/zenodo.10013579)
 
 ## About this repository
 
-This repository contains the code for the [link23 collaboration space](https://www.link23.world/).
+This repository contains the code for the [link23 collaboration space](https://link23-world.github.io/collabspace/).
 We welcome all contributions to help us maintain this space (by definition it is collaborative!).
-If you're interested in joining the link23 community, please [sign-up to our Slack](https://www.link23.world/slack) and if you have time to actively volunteer then please do consider [signing-up as a link23 volunteer](https://www.link23.world/volunteer).
+If you're interested in joining the link23 community, please [sign-up to our Slack](https://link23-world.github.io/collabspace/slack) and if you have time to actively volunteer then please do consider [signing-up as a link23 volunteer](https://link23-world.github.io/collabspace/volunteer).
 
 
 ## Licensing
@@ -32,7 +32,7 @@ In this repository we recognise contributions from *all contributors* across all
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://www.link23.world/"><img src="https://avatars.githubusercontent.com/u/138118852?v=4?s=100" width="100px;" alt="Raphael Sonabend"/><br /><sub><b>Raphael Sonabend</b></sub></a><br /><a href="#business-RaphaelGEL" title="Business development">💼</a> <a href="#code-RaphaelGEL" title="Code">💻</a> <a href="#content-RaphaelGEL" title="Content">🖋</a> <a href="#ideas-RaphaelGEL" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-RaphaelGEL" title="Maintenance">🚧</a> <a href="#question-RaphaelGEL" title="Answering Questions">💬</a> <a href="#research-RaphaelGEL" title="Research">🔬</a> <a href="#tool-RaphaelGEL" title="Tools">🔧</a> <a href="#doc-RaphaelGEL" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://link23-world.github.io/collabspace/"><img src="https://avatars.githubusercontent.com/u/138118852?v=4?s=100" width="100px;" alt="Raphael Sonabend"/><br /><sub><b>Raphael Sonabend</b></sub></a><br /><a href="#business-RaphaelGEL" title="Business development">💼</a> <a href="#code-RaphaelGEL" title="Code">💻</a> <a href="#content-RaphaelGEL" title="Content">🖋</a> <a href="#ideas-RaphaelGEL" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-RaphaelGEL" title="Maintenance">🚧</a> <a href="#question-RaphaelGEL" title="Answering Questions">💬</a> <a href="#research-RaphaelGEL" title="Research">🔬</a> <a href="#tool-RaphaelGEL" title="Tools">🔧</a> <a href="#doc-RaphaelGEL" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/drhodesbrc"><img src="https://avatars.githubusercontent.com/u/14894770?v=4?s=100" width="100px;" alt="drhodesbrc"/><br /><sub><b>drhodesbrc</b></sub></a><br /><a href="#review-drhodesbrc" title="Reviewed Pull Requests">👀</a> <a href="#ideas-drhodesbrc" title="Ideas, Planning, & Feedback">🤔</a> <a href="#projectManagement-drhodesbrc" title="Project Management">📆</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/pharouknucleus"><img src="https://avatars.githubusercontent.com/u/40836841?v=4?s=100" width="100px;" alt="Umar Farouk Ahmad"/><br /><sub><b>Umar Farouk Ahmad</b></sub></a><br /><a href="#ideas-pharouknucleus" title="Ideas, Planning, & Feedback">🤔</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/allissadillman"><img src="https://avatars.githubusercontent.com/u/10225701?v=4?s=100" width="100px;" alt="Allissa Dillman"/><br /><sub><b>Allissa Dillman</b></sub></a><br /><a href="#content-allissadillman" title="Content">🖋</a> <a href="#ideas-allissadillman" title="Ideas, Planning, & Feedback">🤔</a> <a href="#research-allissadillman" title="Research">🔬</a> <a href="#review-allissadillman" title="Reviewed Pull Requests">👀</a></td>
