@@ -9,7 +9,7 @@
 
 This repository contains the code for the [link23 collaboration space](https://link23-world.github.io/collabspace/).
 We welcome all contributions to help us maintain this space (by definition it is collaborative!).
-If you're interested in joining the link23 community, please [sign-up to our Slack](https://link23-world.github.io/collabspace/slack) and if you have time to actively volunteer then please do consider [signing-up as a link23 volunteer](https://link23-world.github.io/collabspace/volunteer).
+If you're interested in joining the link23 community, please [sign-up to our Slack](https://link23-world.github.io/collabspace/slack) and if you have time to actively volunteer then please do consider [signing-up as a link23 volunteer](https://link23-world.github.io/collabspace/becomeavolunteer).
 
 
 ## Licensing

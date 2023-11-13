@@ -41,7 +41,7 @@ content:
 
     - image: "involve-citizen"
       title: "Community and citizen science"
-      text: "We want to build a community of diverse stakeholders interested in genomic equity. Whether you're a clinician, researcher, software developer, or just someone interested in genetics, we want this to be the place for you! There are many ways to [get involved](/getinvolved) in link23 events and if you have some free time then we are always interested in new [volunteers](/volunteer) and we are also interested in forming [partnerships with organisations](/partner)."
+      text: "We want to build a community of diverse stakeholders interested in genomic equity. Whether you're a clinician, researcher, software developer, or just someone interested in genetics, we want this to be the place for you! There are many ways to [get involved](/getinvolved) in link23 events and if you have some free time then we are always interested in new [volunteers](/becomeavolunteer) and we are also interested in forming [partnerships with organisations](/partner)."
       button:
         - label: "Join our Slack"
           url: "slack"
