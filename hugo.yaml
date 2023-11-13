@@ -29,7 +29,7 @@ params:
     - "Genomics England Limited, 1 Canada Square, London E14 5AB"
 
   contact:
-    - "link23@genomicsengland.co.uk"
+    - ""
 
 menus:
   main:
@@ -105,8 +105,8 @@ menus:
     - name: "Partner"
       weight: 70
 
-    - name: "Contact"
-      weight: 80
+    # - name: "Contact"
+    #   weight: 80
 
   footer:
     - name: "Home"
@@ -145,9 +145,9 @@ menus:
       url: "/partner"
       weight: 70
 
-    - name: "Contact"
-      url: "/contact"
-      weight: 80
+    # - name: "Contact"
+    #   url: "/contact"
+    #   weight: 80
 
     - name: "GitHub"
       url: "https://github.com/link23-world/collabspace"

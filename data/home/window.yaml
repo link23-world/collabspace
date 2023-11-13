@@ -10,8 +10,8 @@ content:
   buttons:
     - label: "About Us"
       url: "about"
-    - label: "Contact"
-      url: "contact"
+    # - label: "Contact"
+    #   url: "contact"
     - label: "Join our Slack!"
       url: "slack"
 
