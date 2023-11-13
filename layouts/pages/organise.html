@@ -4,7 +4,7 @@
       <div class="fs-1 fw-bold text-primary">{{.Params.title}}</div>
       <div class="img-fluid justify-content-center text-center pb-4">
         {{ $url := print "images/organise/posts/" .Params.image }}
-        <img style="width: 300px" src="/{{ $url }}">
+        <img style="width: 300px" src="{{ .Site.BaseURL }}{{ $url }}">
       </div>
       <div class="pb-3">
         <h3>Key Details</h3>

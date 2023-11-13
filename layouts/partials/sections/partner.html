@@ -16,7 +16,7 @@
           <div class="col-lg-2">
           <div onclick="showPartnerType({{ $card.title }})" class="card card-partners h-100 shadow p-3 mb-3 bg-white rounded">
             <h4 class="card-title text-center text-danger pb-2 fs-5">{{ $card.title }}</h4>
-            <img class = "img-fluid" src="/{{ $card.image }}">
+            <img class = "img-fluid" src="{{ site.BaseURL }}{{ $card.image }}">
             <div class="text-center m-0 p-0 mt-2">
               <p class="m-0 p-0">{{ $card.who | markdownify }}</p>
             </div>

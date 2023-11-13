@@ -44,7 +44,7 @@
                     {{ $imgsrc := cond (isset .Params "image") .Params.image (. | path.BaseName) }}
                     {{ $imgsrc := cond (strings.Contains $imgsrc ".png") $imgsrc (print $imgsrc ".jpg") }}
                     {{ $url := print "images/" .Params.layout "/posts/" $imgsrc }}
-                    <img src="/{{ $url }}">
+                    <img src="{{ .Site.BaseURL }}{{ $url }}">
                   </div>
                   <p class="card-text text-black">{{ .Summary }}</p>
                   {{ if isset .Params "apply_date"}}

@@ -27,7 +27,7 @@
           <div class="card h-100 p-4 pb-0 shadow bg-white rounded">
             <h4 class="card-title text-center text-danger pb-2">{{ .title }}</h4>
             {{ $url := print "images/" .image ".png"}}
-            <img src="/{{ $url }}">
+            <img src="{{ .Site.BaseURL }}{{ $url }}">
             <div class="card-body text-center">
               <p class="card-text pb-4">{{ .text | markdownify }}</p>
               {{ if (isset . "external") }}

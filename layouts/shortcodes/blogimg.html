@@ -1,6 +1,6 @@
 <figure>
   <img class="mx-auto d-block"
-    src="{{ .Get 0 }}" alt="{{ .Get 1 }}"
+    src="{{ .Site.BaseURL }}{{ .Get 0 }}" alt="{{ .Get 1 }}"
     style="width: {{ with .Get 3 }}{{ . }}{{ else }}100%{{ end }}; vertical-align: middle;">
   <figcaption>{{ .Get 2 }}</figcaption>
 </figure>

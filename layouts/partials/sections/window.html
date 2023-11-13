@@ -21,8 +21,8 @@
             <div class="position-relative">
               <div class="row m-auto w-100">
                 <div class="col-12">
-                  <img id="dnatool-gif" class="gifimg mx-auto w-100" src="images/dnatool.gif" alt="Cartoon gif of double helix and cogs">
-                  <img id="dnatool-img" class="gifimg mx-auto w-100" src="images/dnatool.png" alt="Cartoon image of double helix and cogs">
+                  <img id="dnatool-gif" class="gifimg mx-auto w-100" src="{{ .Site.BaseURL }}images/dnatool.gif" alt="Cartoon gif of double helix and cogs">
+                  <img id="dnatool-img" class="gifimg mx-auto w-100" src="{{ .Site.BaseURL }}images/dnatool.png" alt="Cartoon image of double helix and cogs">
                 </div>
               </div>
           </div>
@@ -35,7 +35,7 @@
             <div class="card shadow p-4 bg-white rounded h-100 w-100" style="min-height: 39vh;">
               <div class="card-body text-center w-100">
                   <h4 class="card-title text-center text-danger pb-2">{{ .title }}</h4>
-                  <img class="w-60 rounded-circle" src="images/window/{{ .image }}.png">
+                  <img class="w-60 rounded-circle" src="{{ .Site.BaseURL }}images/window/{{ .image }}.png">
                   <div class="text-center m-0 p-0">
                     {{ range .button }}
                     <a class="btn btn-outline-primary px-2 mt-4 ms-sm-1 text-center" href='{{ .url }}'>{{ .label }}</a>
@@ -52,7 +52,7 @@
             <div class="card shadow p-4 bg-white rounded h-100 w-100" style="min-height: 39vh;">
               <div class="card-body text-center w-100">
                   <h4 class="card-title text-center text-danger pb-2">{{ .title }}</h4>
-                  <img class="w-60 rounded-circle" src="images/window/{{ .image }}.png">
+                  <img class="w-60 rounded-circle" src="{{ .Site.BaseURL }}images/window/{{ .image }}.png">
                   <div class="text-center m-0 p-0">
                     {{ range .button }}
                     <a class="btn btn-outline-primary px-2 mt-4 ms-sm-1 text-center" href='{{ .url }}'>{{ .label }}</a>
